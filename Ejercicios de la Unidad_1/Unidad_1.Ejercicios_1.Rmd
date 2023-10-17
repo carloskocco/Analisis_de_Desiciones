@@ -20,10 +20,9 @@ knitr::opts_chunk$set(echo = TRUE)
     que únicamente tienen dos decisiones posibles: comprar 6 camiones
     ligeros, o comprar 3 camiones pesados. Proporcione usted una lista
     exhaustiva de las decisiones posibles.
-    
 
-   Decisiones posibles: $a_1$: 6 camiones de 5 toneladas; $a_2$: 4 de 5 y uno de
-    10; $a_3$: 2 de 5 y 2 de 10; $a_4$: 3 de 10.
+Decisiones posibles: $a_1$: 6 camiones de 5 toneladas; $a_2$: 4 de 5 y
+uno de 10; $a_3$: 2 de 5 y 2 de 10; $a_4$: 3 de 10.
 
 2.  El menú de una casa de comidas contiene sólo dos platillos: uno de
     carne y el otro de pescado. Tanto uno como el otro puede estar bien
