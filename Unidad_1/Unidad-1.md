@@ -8,10 +8,6 @@ editor_options:
     wrap: 72
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-
-```
 <center> 
 # UNIDAD 1 
 </center>
