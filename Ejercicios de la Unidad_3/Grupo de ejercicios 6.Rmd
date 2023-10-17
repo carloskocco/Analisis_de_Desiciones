@@ -1,0 +1,157 @@
+---
+title: "Grupo de ejercicios 6"
+author: "Carlos Manuel Gómez Miranda"
+date: "2023-10-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Grupo de ejercicios 6
+
+1. Dada la siguiente distribución de probabilidad a priori:
+
+|0;|0;|0,|0;|0,|
+| :- | :- | :- | :- | :- |
+|p(O))|0\.10|0\.20|0\.30|—0.40|
+
+Si con un procedimiento de muestreo estadístico aplicado ocurre una observación muestral Z con las siguientes características:
+
+P(Z/ 01)=0.80; P(Z/ 0,) =0.60; P(Z/ 0;)=0.50; P(Z/ 04)= 0.20
+
+Calcule las probabilidades aposteriori.
+
+Respuesta:P(0,/Z)= 0.186;P(0,/Z) = 0.279;P(0/Z)= 0.349;P(6/Z)=0.186
+
+2. Un empresario dispone de $1,000,000 para invertirlos en la construcción de una nueva planta. Si las condiciones económicas no cambian la inversión redituará un 15% anual, pero si ocurre una leve re- cesión económica redituará tan sólo un 6% al año. Otra alternativa sería invertir el dinero en bonos industriales para obtener un beneficio seguro del 9% en el mismo periodo. ¿Qué probabilidad debe asignar el empresario al estado de leve recesión económica antes de considerar que la mejor alternati- va sea tomar la decisión de invertir en bonos industriales?
+
+Respuesta:p<2/3.
+
+3. Considere nuevamente el ejercicio 3 del Grupo de ejercicios 5 (página 39), sobre la empresa que usted asesora, y que desea invertir $10,000 dólares en el mercado de valores comprando acciones de la com- pañía A o de la compañía B. Suponga que usted decide llevar a cabo una investigación personal consultando a un amigo al que le fue muy bien en el mercado de valores, quien manifiesta su opinión como “por” hacer la inversión o “contra” hacer la inversión. Esta opinión se cuantifica como sigue:
+
+* Si es un mercado a la alza hay 90% de posibilidad de que el voto sea “por” (y el 10% de que sea en “contra”)
+* Sies un mercado a la baja, la posibilidad de un voto “por” se reduce a 50%
+
+¿Cuál es el resultado del análisis del problema con esta información adicional?
+
+Respuesta: Si el voto es “por” invertir en las acciones de A; si el voto es “contra” invertir en las acciones de B.
+
+4. Retome el ejercicio 6 del Grupo de ejercicios 5 (página 40) sobre un agricultor. Suponga que tiene la opción adicional de usar la tierra como pastizal, en cuyo caso garantiza un pago de $7,500. El agricul- tor tiene también información adicional que le proporcionó un agente de seguros, en relación con el grado de estabilidad de los precios a futuro de los productos. La evaluación de “favorable” (F) y “des- favorable” (D) por parte del agente, se cuantifica mediante las probabilidades condicionales que apa- recen en la tabla, donde el cambio de los precios a futuro están dados por:
+
+||P (F/0)|P (D/0)|
+| :- | :- | :- |
+|Hacia abajo|0\.85|0\.15|
+|Sin cambio|0\.50|0\.50|
+|Hacia arriba|0\.15|0\.85|
+
+
+
+1) Dibuje el árbol de decisión asociado.
+1) Encuentre la decisión óptima para el agricultor.
+
+Respuesta: Usar la tierra como pastizal.
+
+5. A pesar de que es temporada de lluvias, Mauricio desea ir de pesca mañana, pero sólo si no llueve. Según datos pasados sobre el clima, hay 70% de posibilidad de que llueva durante la estación de llu- vias. El informe del tiempo de las 6:00 de la tarde pronostica 50% de posibilidad de lluvias para ma- ñana. ¿Debe Manricio planear ir de pesca mañana? Justifique su respuesta.
+
+Respuesta: No porque sólo hay un 30% de posibilidad de que no llueva.
+
+6. Una empresa de electrónica recibe 75% de sus componentes del proveedor A y el 25% restante del proveedor B. El porcentaje de componentes defectuosos es del 1% para el proveedor A y del 2% para el proveedor B. Cuando se inspecciona una muestra al azar de tamaño 5 que se toma de un lote reci- bido, sólo se encuentra una unidad defectuosa.
+1) Determine la probabilidad de que el lote se haya recibido del proveedor A.
+1) Determine la probabilidad de que el lote se haya recibido del proveedor B.
+
+(Sugerencia: la probabilidad de un artículo defectuoso en una muestra es binomial)
+
+NOTA: P(Idefectuoso/A)= .048y P(1defectuoso/B)= .092. - Respuesta:P(A/1defectuoso)= .6091;P(B/I|defectuoso)=.3909.
+
+7. Una compañía procesadora de alimentos está considerando lanzar una nueva lmea dc almuerzos ins- tantáneos. Con una distribución nacional se estima que el beneficio neto para la empresa será de $50 millones si el producto es muy aceptado; de $20 millones si es medianamente aceptado, y se perderán 14 millones si no es aceptado por los consumidores. Si se decide no implantar la línea, se per- derán $3 millones que se han invertido en investigación y desarrollo. Las estimaciones actualcs indi- can una probabilidad del 0.1 para gran éxito y de 0.4 para éxito moderado.
+
+Existe la posibilidad de probar el mercado a nivel regional antes de hacer el llanzamicnto nacional pe- r0, aunque los resultados de esta prueba serían significativos, no serían concluyentes. El costo de la prueba es de $5 millones y su confiabilidad está dada por las siguientes probabilidades:
+
+||Los resultados|de la prueba regional|indicarán:|
+| :- | :- | :- | :- |
+|Dado que el producto es:|<p>Gran éxito</p><p>- P(Ge/0))</p>|<p>Éxito moderado</p><p>P(Em/0;)</p>|<p>Sin éxito</p><p>P(Se/0))</p>|
+|Muy aceptado|0\.6|0\.4|0|
+|Medianamente aceptado|0\.2|0\.6|0\.2|
+|Sin aceptación|- Ol|03 —|.0.6|
+
+¿Cuáles deberán ser las acciones de la compañía?
+
+Respuesta: No probar el mercado y lanzar el producto a nivel nacional.
+
+8. La empresa textil CLAR desarrolló un material aislante sintético y está considerando la introducción de una nueva línea de ropa deportiva de invierno. Si deciden producirla, una opción requeriría una in- versión en pequeña escala para modificar las instalaciones a fin de producir las chamarras de invierno. Otra opción necesitaría una inversión a gran escala para ampliar las instalaciones y producir guantes sombreros, pantalones y suéteres.
+
+El Gerente de ventas considera que el mercado puede responder de dos maneras: “muy favorable” o “relativamente indiferente”; y el Departamento de planeación realizó un estudio para estimar las utili- dades para cada respuesta, con los siguientes resultados: la opción de gran escala producirá una ganan- cia neta de $4 millones durante la vida del proyecto si la respuesta del mercado es favorable, o una pérdida de $5 millones si la respuesta es indiferente. Para la opción de pequeña escala, las estimacio- nes son una ganancia de $1 millón para una respuesta favorable pero una pérdida de $2 millones para la respuesta indiferente.
+
+El Gerente general considera que una tercera opción es la de no entrar en la producción. Para evaluar todas las opciones, en la empresa han calculado las siguientes probabilidades subjetivas para los esta- dos de la naturaleza:
+
+P(muy favorable)= 0.7 ; P(indiferente)= 0.3
+Es posible contratar a un consultor para investigar si la reacción de los consumidores será favorable o in- diferente. En estudios similares que el consultor ha efectuado, aunque las predicciones no han sido per- fectas, su récord de aciertos es razonablemente bueno como se aprecia en la siguiente tabla:
+
+||Respuesta|real:|
+| :- | :- | :- |
+|Reporte del consultor|Favorable|Indiferente|
+|Positivo|12|Z|
+|Negativo -|' 8 -|.|
+
+Suponiendo que la empresa contrató al consultor hace varias semanas por $40,000 para realizar una encuesta sobre el nuevo material y que los resultados que acaba de recibir indican un reporte negativo, encuentre la decisión óptima y la ganancia esperada correspondiente:
+
+1) Siseutiliza el reporíe del consultor.
+1) Sino se utiliza el reporte del consultor.
+
+Respuestas: a) Si el reportees positivo invertir a gran escala; ganancia esperada$2.875 millones. Si es negativo: no invertir; ganancia esperada$0. b) Invertir agran escala; ganancia esperada$1.3 millones.
+
+. Una ciudad está considerando reemplazar la flota de autos de gasolina que pertenecen al municipio por autos eléctricos. El fabricante de estos autos afirma que la ciudad tendrá ahorros significativos si se efectúa el cambio, pero las autoridades tienen dudas. Si el fabricante tiene razón, la ciudad ahorrará $1 millón; si la nueva tecnología falla, como algunos críticos sugieren, el cambio costará a la ciudad $450,000. Una tercera posibilidad es que ninguna de estas situaciones ocurra, y que la ciudad quede igual con el cambio. Un equipo de consultores ha determinado que las probabilidades de estos tres eventos son: 0.25, 0.30 y 0.45.
+
+Existe la posibilidad de utilizar un programa piloto que podría indicar el costo potencial o el ahorro por la conversión a autos eléctricos. El programa consiste en rentar 3 de estos autos durante 3 meses y utilizarlos bajo condiciones normales. El costo de este programa sería de $50,000. El consejero de la ciudad considera que los resultados serían importantes pero no concluyentes, para lo cual presenta un resumen de probabilidades basado en la experiencia de otras ciudades:
+
+||Los resultados|del programa piloto|indicarán:|
+| :- | :- | :- | :- |
+|Dado que la conversión:|<p>Ahorro</p><p>P(A/6;)</p>|<p>Sin cambio</p><p>- P(Sc/6;)</p>|<p>Pérdida</p><p>P(P/0;)</p>|
+|Ahorra|0\.6|0\.3|0\.1|
+|Da igual|0\.4|0\.4|0\.2|
+|Da pérdida|0\.1|0\.5|0\.4|
+
+
+
+1) ¿Cuáles la decisión recomendada si no se realiza el programa piloto?
+1) ¿Cuáles el árbol del diagrama de decisión?
+1) Siguiendo el criterio del VEM ¿cuál es la decisión óptima?
+
+Respuestas: a) Cambiar a autos eléctricos. c) Realizar el programa piloto y si el resultado es “ahorro” cambiar a autos eléctricos, si el resultado es “sin cambio” o “pérdida”, no hacer el cambio.
+10\. La empresa DES fabrica chips de memoria en lotes de 10 y t1eneun problema porque si bien el 80% de sus lotes contienen 10% de chips defectuosos (lo que se considera un lote bueno), el 20% restante contiene 50% de defectuosos (lote malo o defectuoso). Si se envía un lote bueno al siguiente paso de producción, el costo del proceso es de $1,000, pero si se envía un lote malo el costo se eleva a $4,000.
+
+La empresa tiene también la posibilidad de trabajar de nuevo un lote, que después con seguridad será bueno, con un costo de $1,000 0, con un costo de $100, probar un chip de cada lote en un intento por determinar si el lote es defectuoso.
+
+1) Determine cómo puede DES minimizar el costo total por lote.
+1) Calcule el valor esperado de la información muestral (VEIM) y el valor esperado de la informa- ción perfecta (VEIP)
+
+Respuesta: a) Probar un chip: si resulta defectuosovolver a trabajar ellote; si no es defectuoso, enviar el lote al siguiente proceso.VEM = $1,580 b) VEIM = $120; VEIP = $400.
+
+11 Los datos históricos de la empresa “Manufacturas FEMA” estiman en 5% la posibilidad de que un
+
+lote de artículos sea inaceptable (malo) porque tiene 15% de unidades defectuosas mientras que, con el complemento, un lote es bueno porque tiene sólo 4% de artículos defectuosos. En lugar de embar- car lotes únicamente con base en las probabilidades previas estimadas, se toma una muestra de dos artículos de cada lote, lo que da lugar a tres posibles resultados:
+
+1) Ambos artículos son buenos (2b)
+1) Un artículo es bueno (1b)
+1) Ambos artículos son defectuosos (2d)
+
+Si la empresa embarta lotes a dos clientes: A y B, cuyos contratos especifican que el porcentaje de artículos defectuosos no debe exceder del 5% para el primero y del 8% para el segundo, con una pena- lización para FEMA de $100 dólares por cada punto porcentual que exceda el límite máximo de defec- tuosos estipulados en el contrato, y se sabe que proporcionar lotes de mejor calidad a los especificados tiene un costo para la compañía de $80 dólares por punto porcentual,
+
+1) Desarrolle el árbol de decisión asociado
+1) Calcule las probabilidades a posteriori
+1) Determine una estrategia de prioridades para el embarque de los lotes al cliente A o al cliente B
+
+. con el fin de minimizar los costos. , (Sugerencia: la probabilidad de un artículo defectuoso en una muestra es binomial)
+
+Respuestas: b) P(9.|2b) 0.9604; P(6,|1b) = 0.85124; P(6¡l2d) 0.57467 y las probabilidades de 0, el complemento.
+
+c) En los tres casos el mínimo costo se obtiene para el cliente A.
+
+12\.Una moneda o es de dos águilas o es una moneda común con águila y sol. No se puede inspeccionar
+
+la moneda, pero con un costo de $5.00 se puede lanzar una vez, observar si sale águila o sol y decidir si es o no una moneda con dos águilas. Hay una recompensa, c¡, (0 penalización, C.1)si la decisión es correcta (o incorrecta). Determine la estrategia óptima usando la forma extensiva de análisis.
+
+Respuesta: VEM = 0.75c¡ + 0.25 cy —5. Si sale águila: moneda con dos águilas; si sale sol: moneda con águila y sol.
+

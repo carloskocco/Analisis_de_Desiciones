@@ -1,0 +1,121 @@
+---
+title: "Ejercicios Unidad 2"
+author: "Carlos Manuel Gómez Miranda"
+date: "2023-10-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Grupo de ejercicios 2
+
+1. Considere la siguierite matriz de pagos dada en miles de pesos:
+
+|<p>Acción</p><p>Estado de la naturaleza</p>|a|<p>\_a</p><p>\_</p>|az|
+| :- | :- | :- | :- |
+|01|30|90|20|
+|0,|100|40|50|
+|0;|80|70|60|
+
+¿Qué decisión tomaría con base en cada uno de los criterios para la toma de decisiones bajo total in- certidumbre? -
+
+Respuesta: a domina a a;. Maximin: a,. Maximax: a¡. Hurwicz (a = 1/3):a,. Savage: a; 0 a,.
+
+2. ¿Cuál es la mayor diferencia entre el criterio de Wald y el criterio de Savage?
+2. Dada la siguiente matriz de pago:
+
+|<p>Acción</p><p>Estado de la naturaleza</p>|a|ay|az|ay|
+| :- | :- | :- | :- | :- |
+|0;|—100|60|20|—0|
+|0,|160|80|60|—100|
+|0;|40|140|—60|....|
+|04|200|40|20|40|
+|0s|0|100|80|400|
+
+1) Apliquelos siguiente's-crit€fíb"-para scleccionar una acción óptima:
+1) Dom1nac¡ón (para obtener sólo las acc1ones viables)
+1) Maximin —
+1) Maximax
+1) Hurwicz (a = 1/3)
+1) Pesar mínimas (Savage)
+2) Comparesuelección bajo estoscriterios .
+2) Critique cadacriterio \* “ '
+
+Respuestas: 1) ay domina a az 2) .. 3) a; 4)a; 5) a,
+
+4\. Los estudios geológicos que PEMEX ha realizado en diferentes partes del país y del mar territorial,
+
+\- muestran que en la región del Paleocanal de Chicontepec en el estado de Veracruz, pueden encontrar alguna de las siguientes situaciones:
+
+1. Posible producción de un millón de barriles diarios de crudo ligero.
+1. Posible producción de 200 mil barriles diarios de crudo ligero.
+1. Gas únicamente. -
+1. Región seca.
+
+Ante tales posibilidades, PEMEX puede instrumentar alguna de las siguientes alternativas:
+
+1) No hacer nada
+1) Explorar y explotar
+1) Realizar estudios geológicos más completos
+
+Los resultados económicos de estas acciones son los siguientes:
+
+|<p>Acción</p><p>Estado de la naturaleza</p>|ay|..|az|
+| :- | :- | :- | :- |
+|0\.|—500|500|—30|
+|0,|—100|100|—30|
+|0;|—50|50|—30|
+|04|0|—900|—30|
+
+Dado que no se tiene información para establecer la distribución de probabilidad asociada a los esta- dos de la naturaleza posibles:
+
+1) Encuentre la decisión que deberá tomar PEMEX de acuerdo con los criterios de elección no pro- babilística, considerando a = 1/3 para el criterio de Hurwicz.
+1) Siusted fuera consultado ¿qué acción recomendaría seguir y por qué razones?
+
+Respuestas: Maximin: az. Maximax: a,. Hurwicz: a;. Savage: as
+
+5. Usted ha invitado a 100 personas para el sábado por la tarde a su casa, que no es muy grande pero\_Í.': tiene un jardín muy bonito y de buen tamaño para organizar ahí la reunión, si el tiempo lo permite. Si \* decide arreglar el jardín y hacer ahí la fiesta y después de que lleguen los invitados empieza a llover, \_ se arruinarán los arreglos, los invitados se mojarán, y usted seguramente deseará haber decidido hacer
+
+la reunión dentro de la casa. Haga la lista de las acciones posibles y de los estados de la naturaleza; dé - un valor a las consecuencias y represente el problema en una matriz de pago.
+
+Respuesta: 2 estados de la naturaleza; 2 acciones posibles, —
+
+6. Un inversionista tiene como objetivo lograr la máxima tasa de retorno posible y ha calculado sus tasas de retorno, en porcentaje, para cada uno de los tres tipos de inversión que considera como posibles: acciones especulativas, acciones de alto grado, o bonos, y cada uno de los tres estados de la naturaleza que pueden ocurrir: guerra, paz o depresión. Los resultados son los siguientes:
+
+|<p>Acción —</p><p>Estado de la naturaleza</p>|<p>a valores espe-</p><p>culativos</p>|<p>a acciones de</p><p>alto grado</p>|a bonos|
+| :- | :- | :- | :- |
+|0, (guerra)|20|9|4|
+|0, (paz) -|1|8 ;|4|
+|0; (depresión)|—6|0|+|
+
+¿Cuál es la decisión óptima utilizando los criterios de elección no probabilísticos?
+
+' Respuestas:Dominación: nohay. Maximin: a;. Maximax: a;. Hurwicz: a;. Savage: a,
+
+7. La compañía de la que es usted Gerente general, ha desarrollado un nuevo producto que está conside- rando poner a la venta. El costo de ponerlo en el mercado es de $500,000. Si se pone en el mercado y es superior al del competidor las ventas brutas estimadas son de $1,500, 000. Si es peor que el del competidor, las ventas brutas se estiman en $250,000. Si no se coloca en el mercado usted puede ven- der la idea de un nuevo producto a los competidores por $500,000 si es un producto superior, o por $150,000 si es inferior. La decisión de sacarlo al mercado o vender la idea debe hacerla ahora aunque la confirmación de la superioridad o la inferioridad del producto no la tendrá sino después de unas se- manas. ¿Deberá sacar al mercado el producto?
+
+Respuestas:Maximin:a>.Maximax:a;.Hurwicz(4 = 1/3):a,.Savage:aj
+
+8. Una empresa fabricante de ropa deportiva ha diseñado dos nuevos estilos de shorts para jugar tenis: A y B. La compañía puede producir cualquiera de los dos, ambos o ninguno de los dos. El costo de pro- ducción que debe gastarse por adelantado si el modelo es fabricado es de $50,000 para cualquiera de los dos modelos; pero es de $125,000 para ambos. La ganancia, incluyendo todos los ingresos y costos excepto los de producción, es de $100,000 por estilo si el modelo es satisfactorio y $0 si es un fracaso ¿Cuál es el mejor curso de acción si no se tiene la posibilidad de decidir no fabricar?
+
+Respuesta: Maximin y Hurwicz: fabricar A ó B. Maximax y Savage: fabricar A y B.
+
+9. Un comerciante tiene suficiente-espacio-en-sus estantes para almacenar hasta 4 productos que se des- componen fácilmente y, que si no se venden antes de 24 horas, se vuelven inservibles. El precio de compra unitario es de $25 y el de venta de $50. Si se ignoran los gastos fijos del comerciante, ¿cuántas unidades debería almacenar para minimizar las posibles pérdidas monetarias si no sabe nada sobre la demanda aleatoria del producto?
+
+Respuesta: Maximin: no comprar; Hurwicz: no comprar; Savage: almacenar 2.
+
+10. Los restaurantes SEB”s y DÁNY son competidores y deben decidir al mismo tiempo si llevan acabo una campaña de pubhc1dad pequeña, mediana o grande. Depend1endo de la decisión de cada restau- rante, las ganancias de SEB's son las siguientes:
+
+|Opciones de SEB's|Pequeña|Mediana|de|
+| :- | :- | :- | :- |
+|Pequeña|$6,000|$5,000|$2,000|
+|Mediana|$5,000|$6,000|$1,000|
+|Grande|$9,000|$6,000|$0|
+
+Determine la elección del tipo de campaña publicitaria que debe hacer el restaurante SEB's según los cuatro criterios de decisión no probabilísticos.
+
+NOTA: Observe que los estados de la naturaleza para el restaurante SEB"s son las decisiones posibles del restaurante DANY.
+
+Respuestas: Maximin: campaña pequeña. Maximax: campaña grande. Hurwicz: campaña pequeña. Savage: campaña grande.

@@ -1,0 +1,137 @@
+---
+title: "Grupo de ejercicios 3"
+author: "Carlos Manuel Gómez Miranda"
+date: "2023-10-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Grupo de ejercicios 3
+
+1. El propietario de una tienda de artículos para jugar tenis encuentra que en su primer mes de estableci- do ha vendido 125 raquetas de tenis de madera, 50 raquetas de aluminio y 25 raquetas de acero. Con sólo estos datos como base ¿qué distribución de probabilidad a priori formularía para cada tipo de ra- quetas de tenis vendidas?
+
+Respuesta:0; (raquetasde madera):0.625; 6, (raquetasdealuminio): 0.25; 6; (raquetasdeacero):0.125
+
+2. Calcule el valor monetario esperado para cada curso de acción:
+
+|<p>Acción</p><p>Estado de la naturaleza</p>|ay|a,|ay —|ay|Probabilidad|
+| :- | :- | :- | :- | :- | :- |
+|0;|$100|$60|$30|$50|0\.7|
+|0,|$40|$50|— $150|.. $200|0\.3|
+
+Respuesta:VEM(a,):$82;VEM(2,):$57;VEM(a):$66;VEM(a.):$95
+
+3. En cada una de las siguientes situaciones, enfrenta un juego con determinados premios y determinadas probabilidades de conseguirlos. ¿Qué es lo que esperaría usted obtener jugando una sola vez a cada uno de ellos? ¿Y que esperaría jugándolo repetidamente? -
+
+|Premios -1|0 +1|||||
+| :- | :- | :- | :- | :- | :- |
+|Probabilidades|0\.2 0.5 0.3|||||
+|Premios|1|2 +|8|16|32 64|
+|Probabilidades|1/2|1/4 1/8|1/16|1/32|1/64 1/128|
+|Premios|—100|+3||||
+|Probabilidades|0\.01|0\.99||||
+
+Respuesta:Una vez: 5. Repetidamente:VE = 3.95
+
+4. ¿Por qué puede resolverse el siguiente problema sin mencionar probabilidades y cuál es la solución?
+
+|<p>.</p><p>Estado de la</p>|<p>Acción</p><p>naturaleza</p>|ay|a,|
+| :- | :- | :- | :- |
+||01|0\.0|1\.0|
+||0|0\.4|0\.6|
+
+Respuesta: Porque a, domina a a,; as
+
+5. Dada la siguiente matriz de pago y las probabilidades previas correspondientes:
+
+|<p>\_ Acción</p><p>Estado de la naturaleza</p>|a|<p>a,</p><p>\_</p>|a;|ay|Probabilidad|
+| :- | :- | :- | :- | :- | :- |
+|0;|—100|60|20|—20|0\.08|
+|0,|160|80|60|-100|0\.10|
+|0;|40|140|—60|—140|0\.50|
+|04|200 -|40|20|— —40|0\.12|
+|0s|0|100|80|400|0\.20|
+
+Encuentre la decisión que determina cada uno de los siguientes cntenos
+
+1) Laplace .
+1) Máxima posibilidad
+1) Valor esperado monetario VEM (Regla de decisión de Bayes)
+1) Mínima pérdida de oportunidad esperada (POE)
+1) Compruebe que POE + VEM = constante
+
+1a) Compare los resultados, indique la decisión que usted tomaría y 1ushñque su elección.
+
+Respuestas:a dominaa a;; a)a; b) a; c) VEM: a; d) POE: a; e)POE +VEM = $194.8
+
+6. La compañía “Deportes S. A.” no está segura de la aceptación del mercado (proporción de clientes que ordenarán el primer año) de su nueva línea de ropa deportiva. Calcula que existe una posibilidad de 40% de capturar el mercado y 60% de no lograrlo. Si hace una campaña de publicidad de diferente in- tensidad, estima obtener los beneficios que se indican en la siguiente matriz de decisión:
+
+|<p>Publicidad|</p><p>Estado de la naturaleza</p>|“ Baja|Media|Alta|
+| :- | :- | :- | :- |
+|Lo captura|0|4,500|10,000|
+|No lo captura|3,000|2,000|—1,000|
+
+Con base en la información que se proporciona ¿qué nivel de publicidad deberá seleccionar?
+
+Respuesta: Utilizando el VEM: a;, campaña de alta intensidad.
+
+- Una empresa productora de alimentos congelados debe de¿idí\_r…entreplantar lechuga o coliflor en un terreno en particular. Suponga que los estados de la naturaleza pueden resumirse en tres: estado per- fecto del tiempo, estado variable del tiempo y estado malo del tiempo. Con base en los informes me- teorológicos se ha determinado que la probabilidad de cada uno es de 0.25, 0.50 y 0.25, respectivamente, Determine la acción que debe tomar la empresa si las ganancias que pueden obtener- se con cada tipo de cosecha según el estado del tiempo que se presente, son las siguientes:
+
+|<p>, Acción</p><p>Estado de la naturaleza</p>|<p>as</p><p>lechuga</p>|<p>ay \_</p><p>coliflor —</p>|
+| :- | :- | :- |
+|0; (perfecto)|-$40,000|$70,000|
+|0, (variable)|$30,000|$20,000|
+|0; (malo) - --|-| $20,000|— “$0|
+
+Respuesta:a, VEM = $30,000.
+
+- Para el ejercicio 9 del Grupo de ejercicios 2 (página 24), sobre el comerciante que puede almacenar -hasta 4 productos cuya vida útil es de 24 horas, si el precio de compra y venta de cada artículo es el mismo: $25 y $50, respectivamente, ¿cuántas unidades debe almacenar el comerciante para maximizar su beneficio esperado, si las probabilidades para la demanda de 0, 1, 2, 3 y 4 unidades son, respecti- vamente, 0.1, 0.3, 0.4, 0.1 y 0.1?
+
+Respuesta:2umdades,VEM = $25.
+
+- Usted participa en un juego que consiste en lo siguiente: de un conjunto de 9 cartas que contiene 2 ases, 3 reyes y 4 sotas, toma una de ellas al azar, la mira y puede o bien pedir una carta nueva de las 8 que quedan (a1), o pasar (a;). Si escoge pasar no hay pago alguno. Si elige a; las recompensas son co- mo sigue: 2 ases o 2 reyes ganan $2; 2 sotas o un as y una sota ganan $1; otras combinaciones pierden $1. Encuentre la solución óptima entre a; y a; y el valor esperado del juego para cada una de las posi- bles cartas iniciales.
+
+Respuesta: si la primera cartaes as osota: a,; si esrey: a;: VEM (as) = 0.083; VEM (rey) = 0; VEM (sota) = 0.111.
+
+10\. Considere el ejercicio 5 del Grupo de ejercicios 1 (página 15), sobre los tres tratamientos médicos disponibles para cuatro posibles enfermedades. Suponga que los tratamientos t;, t;, t; cuestan, respec- tivamente, 3, 2 y 1 unidades, y que p(6,) = 0.2, p(0,) = 0.5, p(6;) = 0.2 y p(0,)= 0.1. Basándose en el costo, exclusivamente, ¿cuál sería la decisión óptima del médico?
+
+Respuesta: Iniciar con el tratamientó t; con un VEM de -$1.8.
+
+l1. En una de las últimas elecciones para el Parlamento en Gran Bretaña, una casa de apuestas ofrecía
+
+apuestas en proporción de 4 a 7 contra que ganasen los Laboristas (si pierden los Laboristas deberán pagar 7 libras por cada 4 libras apostadas) y de 5 a 4 contra que ganasen los Conservadores. Demos- trar que uno debería apostar a menos que se estime que la probabilidad de que ganen los Laboristas está entre 0.56 y 0.64.
+
+12\. Cierto tipo de focos para linterna se recibe empacado en lotes de 10 unidades y en cada uno el número de focos defectuosos puede variar de 0 a 10 inclusive. Se dispone de la siguiente distribución de pro- babilidades asociada con el número de focos defectuosos:
+
+|x|0|1|2|3|+|5|6|7|8|9|10|
+| :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- | :- |
+|P(x)|.20|.24|.21|.14|.09|.05|.03|.02|.O1|.O1|0|
+
+El comprador tiene tres alternativas:
+
+a;: Comprar todos los focos sin inspeccionar el lote.
+
+a;: Revisar el lote a un costo fijo de $20 y devolverlo si los focos defectuosos son tan numerosos
+
+que impiden obtener una ganancia con la venta del lote.
+
+a;: Regresar el lote al productor y perder $10 por cada lote devuelto. Como el precio del lote es de
+
+$100, se recibe un crédito neto de $90 por cada lote devuelto.
+
+\- Los focos se venden al público en $15 cada uno y se extiende una garantía que ofrece devolver $30 al cliente por cada foco defectuoso devuelto. Con estos datos:
+
+1) Establezca la matriz de consecuencias.
+1) Determine la estrategia más conveniente aplicando el criterio del VEM
+
+Respuestas:a) (0;,a) = 15(10)—30(1)—100; (6;,a2)= 15(10—i)- 100—20; a;=-10. b)VEM (a;)=3.3
+
+13\. Un vendedor de periódicos debe decidir cada día cuántos periódicos pedir a su proveedor. El costo de cada ejemplar es de $7 y su precio de venta de $10. Los periódicos que no se venden, al terminar el día ya no tienen valor. Si sabe que puede vender 60, 70, 80 o 90 ejemplares al día:
+
+1) Determine el número de periódicos que debe pedir de acuerdo con los criterios maximin, maximas y Savage. "
+1) Si considera que la probabilidad de vender las cantidades mencionadas es la misma para cada una (son equiprobables), determine el número de ejemplares que debe pedir según el criterio del VEM.
+
+Respuestas: a) Maximin: 60. Maximax: 90. Savage: 70. b) VEM (a;) = 185,pedir70

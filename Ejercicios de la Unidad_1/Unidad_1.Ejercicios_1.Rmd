@@ -1,0 +1,157 @@
+---
+title: "Ejercicios 1"
+author: "prof. J. Zavala"
+date: "2023-08-28"
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Grupo de ejercicios 1
+
+1.  El director de una firma de transporte tiene que adquirir nuevos
+    camiones. Sólo existen dos tipos: de 5 toneladas y de 10 toneladas y
+    la compañía requiere una capacidad total de 30 toneladas. Él asegura
+    que únicamente tienen dos decisiones posibles: comprar 6 camiones
+    ligeros, o comprar 3 camiones pesados. Proporcione usted una lista
+    exhaustiva de las decisiones posibles.
+    
+
+   Decisiones posibles: $a_1$: 6 camiones de 5 toneladas; $a_2$: 4 de 5 y uno de
+    10; $a_3$: 2 de 5 y 2 de 10; $a_4$: 3 de 10.
+
+2.  El menú de una casa de comidas contiene sólo dos platillos: uno de
+    carne y el otro de pescado. Tanto uno como el otro puede estar bien
+    o mal. Haga una relación de los estados de la naturaleza y de las
+    decisiones posibles.
+
+    Respuesta: 4 estados de la naturaleza y 2 decisiones posibles.
+
+3.  Repita el ejercicio anterior si se considera otra posibilidad: ir a
+    comer a otro lado, y otro estado de la naturaleza: lo que habrán
+    preparado en casa para comer, que también se supondrá que es carne o
+    pescado.
+
+    Respuesta: 8 estados de la naturaleza y 3 decisiones.
+
+4.  Repita el ejercicio suponiendo que decide que, si la carne es buena,
+    se queda con ella, independientemente de la calidad del pescado y de
+    lo que haya en casa para comer, y demuestre que en esté caso sólo
+    son necesarios 5 estados de la naturaleza.
+
+5.  Un paciente tiene una de cuatro enfermedades: $\theta_1$,
+    $\theta_2$, $\theta_3$, $\theta_4$. El médico dispone de tres
+    tratamientos: $t_1$, $t_2$, $t_3$. Puede aplicar cualquiera de
+    ellos; si no da resultado puede probar con otro y, si vuelve a
+    fracasar, intentar el tercero. La efectividad está descrita en la
+    siguiente tabla:
+
+    $$
+    \begin{equation}
+    \begin{matrix}
+    {Acción\:(pedido)\\Estado\:de\:la\:\\naturaleza\:(demanda)} & t_1 & t_2 & t_3 \\
+    \theta_1 & 1 & 0 & 0 \\
+    \theta_2 & 0 & 1 & 1 \\
+    \theta_3 & 1 & 0 & 1 \\
+    \theta_4 & 1 & 1 & 0 
+    \end{matrix}
+    \end{equation} 
+    $$
+
+    Donde 1 significa efectivo y 0 no efectivo. Enumere las posibles
+    decisiones (sucesiones de tratamientos) de que dispone el médico.
+
+    Respuesta: $t_1 t_2$; $t_1 t_3$; $t_2 t_1$; $t_2 t_3 t_1$;
+    $t_3 t_2t_1$
+
+6.  Una cadena de producción fabrica unidades de tres tipos: A, B y C.
+    Un día de trabajo se compone de tres turnos. Todas las unidades que
+    se obtienen en un turno son del mismo tipo. El director de
+    producción debe especificar al principio de cada día, qué tipo de
+    unidades van a ser producidas en cada turno. Si únicamente importa
+    la producción total del día y no el orden en que se fabrican, haga
+    una lista exhaustiva y exclusiva de las decisiones.
+
+    Respuesta: 10 decisiones: AAA, BBB, CCC, AAB, AAC, BBA, BBC, CCA,
+    CCB, ABC.
+
+7.  En relación con el ejercicio anterior, si la demanda en cualquiera
+    de esos días es nula o igual a la producción de dos turnos, haga una
+    relación de los estados de la naturaleza. Si al principio del día el
+    almacén no tiene unidades tipo A, pero dispone del producto de un
+    turno de unidades B y del de dos turnos de unidades C, considérense'
+    las" ventajas de las distintás decisiones que puede tomar el
+    director de producción.
+
+    Respuestas: 8 estados de la naturaleza: nada, $a$, $b$, $c$, $ab$,
+    $ac$, $bc$, $abc$ ($ab$ significa demanda para A y para B pero no
+    para C). Con AAB puede satisfacer todas las demandas; con ABC no
+    puede satisfacer todas las demandas asociadas con los estados de la
+    naturaleza que contienen $a$.
+
+8.  Un contratista eléctrico sabe por experiencia que la casas las
+    ocupan solamente tres tipos de familias: aquéllás cuyas carga-pico
+    de uso de energía es de 15 amperes, las que tienen cargas pico de 20
+    amperes y las que llegan a tener hasta 30 amperes como cresta de
+    carga eléctrica. Si él conociera las necesidades de la familia que
+    comprará cada casa, pondría la alimentación adecuada, con lo que
+    eliminaría el problema de que la instalación se quemara si la casa
+    la ocupa una familia con mayor carga-pico a la que se puso, y los
+    problemas que eso le ocasiona tanto económicos como en su
+    reputación. Uno de sus trabajadores le aconseja que eliminen este
+    riesgo poniendo en todas las casas la instalación para cargas-pico
+    de 30 amperes.
+
+    (a). Defina los estados de la naturaleza en este problema.
+
+    (b). Defina las acciones posibles para el contratista.
+
+    (c). En términos de su reputación en el mercado de trabajo y de la
+    viabilidad económica de su trabajo, ¿considera usted que debe el
+    contratista aceptar la propuesta de su empleado e instalar en todas
+    las casas alimentación eléctrica para cargas de 30 amperes?
+    Justifique su respuesta.
+
+    (d). ¿Podría usted proponer al contratista alguna alternativa
+    diferente? De ser así, descríbala brevemente y justifique su
+    propuesta.
+
+    Respuestas:
+
+    (a). $\theta_1$: familia con consumo máximo de 15 amp; $\theta_2$:
+    de 20 amp; $\theta_3$: de 30 amp
+
+    (b). $a_1$: hacer la instalación de 15 amp; $a_2$: de 20 amp; $a_3$:
+    de 30 amp.
+
+    (c). Estaría desperdiciando recursos económicos innecesariamente.
+
+    (d). Hacer algún estudio estadístico. Describa brevemente su
+    propuesta.
+
+9.  Dada la siguiente matriz de pagos, determine si existen acciones
+    dominadas y, de se así, elimínelas hasta obtener una matriz que
+    contenga solo estrategias admisibles, indicando cómo se da la
+    dominación:
+
+    $$
+    \begin{equation}
+    \begin{matrix}
+    {Acción\\Estado\:de\:la\:\\naturaleza} & a_1 & a_2 & a_3 & a_4 & a_5 & a_6 & a_7 & a_8 \\
+    \theta_1 &  -10 &  -38 & -52 &  -59 & -73 &  -80 & -70 & 0 \\
+    \theta_2 &  -10 &   25 &   5 &   20 &  25 &   40 &  50 & 0 \\
+    \theta_3 &  -10 &  170 &  15 &  110 &  90 &  190 & 200 & 0  
+    \end{matrix}
+    \end{equation} 
+    $$
+
+    Respuestas: $a_8$ domina a $a_1$; $a_2$ domina a $a_3$, $a_4$ y
+    $a_5$; $a_7$ domina a $a_6$.
+
+10. Con la matriz de pagos que obtuvo en el problema 9, si tuviera que
+    elegir una acción ¿cuál sería su decisión? ¿Por qué esa y no otras?
