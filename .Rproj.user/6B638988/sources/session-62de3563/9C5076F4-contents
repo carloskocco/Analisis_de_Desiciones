@@ -1,0 +1,4 @@
+options(repos = c(RSM = "https://radiant-rstats.github.io/minicran", CRAN = "https://cloud.r-project.org"))
+install.packages("radiant")
+radiant::radiant()
+radiant::radiant_viewer()

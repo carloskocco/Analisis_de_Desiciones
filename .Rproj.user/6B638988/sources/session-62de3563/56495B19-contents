@@ -1,0 +1,40 @@
+LUZ MARÍARANGELNAFAILE — — — —
+
+Y se elige la acción que tenga el mayor H; . Observe que si a es cercana a 1, quiere decir que el decisor es optimista. Un valor de a cercano a % , indica una actitud neutral hacia el destino.
+
+Desventajas de este criterio: \*
+
+La dificultad para elegir el valor de a.
+
+Se ignoran los valores de las consecuencias intermedias.
+
+La imposibilidad de tomar una decisión cuando todas tengan las mismas consecuencias máxima - . y mínima.
+
+2\.1.4 Pes¿f minimax. Criterio de Savage
+
+Leonard J. Savage propuso minimizar el pesar que se experimentaría por una decisión que no fuera la mejor una vez queha ocurrido unestado de la naturaleza específico.
+
+Para aplicar este criterio debe calcularse una matriz de arrepentimiento o de pérdida de oportunidad y utilizar el criterio minimax para seleccionar la acción que, de este modo, permitirá minimizar el arrepen- timiento máximo, El proceso es el siguiente:
+
+1. Obtener la matriz de pérdida de oportunidad para lo cual:
+1) Se sustituye por 0 el valor más grande de cada renglón (este es el valor del arrepenti- miento para esa entrada)
+1) Los demás valores se calculan como:
+
+Pérdida de oportunidad = | Pago que se habría recibido si se cono- | — [pago aémal]
+
+\- ciera el estado de la naturaleza que iba a
+
+ocurrir
+
+2. Determinar el valor máximo de cada acción.
+2. Elegir la acción que tiene el valor mínimo de los máximos determinados en el punto anterior.
+
+Desventajas de este criterio:
+
+Además de las anotadas para el criterio maximin, cuando el pago se expresa en términos de “utilidad” (en este contexto no significa ganancia), no se puede asegurar que las diferencias de estas unidades re- flejen “perdidas de oportunidad” en el mismo sentido que las diferencias de ganancias monetarias.
+
+Ejemplo 2
+
+Aplicar los criterios de elección no probabilísticos al ejemplo1 para determinar la acción por la que deber- ía decidirse en cada caso.
+
+18
