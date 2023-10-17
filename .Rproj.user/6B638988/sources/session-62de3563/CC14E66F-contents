@@ -1,0 +1,33 @@
+GUÍA DE ESTUDIO DE LA ASIGNATURA ANÁLISIS DE DECISIONES
+
+Una persona selecciona una urna al azar, le quita la etiqueta y la coloca frente a usted pidiéndole que adi- vine qué tipo de urna es. Si usted decide que la urna es del tipo 0; y acierta, gana $4,000, pero si falla pierde $2,000; si decide que la urna es del tipo 6, y acierta, gana $10,000, si se equivoca pierde $500.
+
+Puede pagar para realizar algunos experimentos a fin de conseguir información adicional o tomar la deci- sión con la información proporcionada. Las condiciones son las siguientes:
+
+e e:tomar la decisión con la información disponible. e e; : pagar $800 y extraer una bola de la urna.
+
+e e,:pagar $1,200 y extraer dos bolas de la urna.
+
+Solución
+
+Acciones: a: decidir que la urna es del tipo 6,
+
+... decidir que la urna es del tipo 0, a; : no participar en el juego
+
+Estados de la naturaleza: la ua seleccionada es del tipo 0; -
+
+la urna seleccionada es del tipo 0,
+
+Pagos (re$ultados): Si elige a;: gana $4,000 si el verdaderokestado ¿e la naturaleza es 0;
+
+pierde $2,000 si el verdadero estado es 0,
+
+Sielige a,: gana $10,000 si el verdadero estado es 0,
+
+pierde $500 si el verdadero estado es 01
+
+Sielige a;: no ganani pierde
+
+El siguiente diagrama de árbol representa la secuencia de decisiones que pueden tomarse y los estados de la naturaleza posibles en cada caso. Recuerde que el cálculo de los resultados de cada rama se hace en retroceso.
+
+43

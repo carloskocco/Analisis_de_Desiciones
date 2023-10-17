@@ -1,0 +1,33 @@
+GUÍA DE ESTUDIO DE LA ASIGNATURA ANÁLISIS DE DECISIONES
+
+seguro” de qué tipo de uma tiene frente a usted. Por ello, la información perfectá Itendrá más valor dado que está menos seguro de la respuesta que debe dar.
+
+Por otra parte, la diferencia entre los dos valores del VEM, el de a; en e, y el de a; en e, representa el au- mento esperado en el valor del juego debido al experimento de extraer una bola:
+
+3280 —2800 . 480
+
+Se dice entonces que $480 es el valor esperado de la información de la muestra para el experimento e:
+
+El VEIP puede indicar si se debe obtener o no una información muestral imperfecta. Así, si para e; el costo de la experimentación hubiera sido no de $800 como está planteado, sino mayor de $2,400 (que es el VEIP para lá decisión que se tomaría sin experimentación), no tendría sentido considerar la rama e.
+
+Si la bola que se extrae es negra, el valor monetario esperado y la pérdida de oportunidad esperada co- rrespondientes a cada acción, son los siguientes:
+
+Matriz de decisión Matriz de pérdida de obortunidad
+
+|Estados|a|a|P(0;/N)|Estados|a|a,|
+| :- | :- | :- | :- | :- | :- | :- |
+|01|4,000|— 500|0\.96|0;|0|4,500|
+|0,|—2,000|-10,000|0\.04|07|12,000|0|
+|VEM|3,760|—80||POE = VEIP|480|4,320|
+
+En este caso la mejor decisión es a con un VEM de $3,760 y el VEIP es igual a $480 Y, como ya se sabe, VEM + POE = constante:
+
+aj: 3,760+480=4,240 “a: —80+4,320=4,240
+
+Continuando con el análisis de inducción regresiva, las probabilidades correspondientes a las ramas (e1, R) y (€1,N) se calculan de:
+
+P(R) = P(R N 0,)+ P(R N 6:)= P(R) P(6) + P(R) P(O,) P(R) = (0.4)(0.8)+ (0.9)(0.2)= 0.5
+
+P(N) = P(N N 61)+ PIN N 62)= P(N) P(61)+ P(N) P(6+) P(N) = (0.6)(0.8)+ (0.1)(0.2)= 0.5
+
+47

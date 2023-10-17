@@ -1,0 +1,13 @@
+3\.4 Árboles de decisión
+
+Otra forma de estructurar un problema de toma de decisiones para su análisis, consiste en una gráfica que muestra cronológicamente la secuencia de acciones y resultados a medida que se llevan a cabo. En un problema devarias etapas de decisión, se alternan nodos de decisión (de donde parten las ramas que re- presentan las acciones posibles en ese momento del proceso) y los de probabilidad (de donde parten las ramas que representan a los posibles estados de la naturaleza). Al final se indican las consecuencias o
+
+resultados de cada rama. -
+
+El proceso de análisis representado en un árbol de decisión se llama de inducción regresiva porque, des- pués de-construir el árbol, se va evaluando cada ramaa partir del pago o consecuencia final, de la siguien- te manera: :
+
+1. El valor esperado de cada nodo de probabilidad se obtiene sumando el valor esperado de cada ra- ma (el producto de la probabilidad por la consecuencia). El resultado se anota en el nodo.
+1. Se comparan los resultados del valor esperado de cada nodo de probabilidad y se elige el que nos acerque más al objetivo del problema. Este valor se coloca en el nodo de decisión que les antecede.
+1. Lasramas del árbol que corresponden a los valores no elegidos se “cierran” debido a que represen- tan acciones cuyos resultados no son racionalmente buenos. Se indica con una doble línea sobre la rama.
+
+36

@@ -1,0 +1,36 @@
+GUÍA DE ESTUDIO DE LA ASIGNATURA ANÁLISIS DE DECISIONES
+
+4. Para la ruta (e,, RN, a, 01)y también para (e,, NR, a, 01) la probabilidad revisada es:
+
+P(0,/RN oNR) = 2P(RN0NR/6¡)P(BI)
+
+» P(RNONR/0,)P(6,) i=l
+
+(4/10x6/9+6/10x4/9)(8/10) 32 —(4/10x6/9+6/10x4/9)(8/10) +(9/10x1/9+1/10x9/9)(2/10)) —35
+
+Y, en consecuencia,
+
+P(0/ RN o NR) = ....... RN o NR) = %
+
+5. Estos mismos valores de probabilidad corresponden a las ramas (e,, RN o NR, a, 01)y (e2, RN o NR, a2,0).
+6. Rama (e,, NN, a, 01):
+
+..... NN)= 2P(NJV/91)P(91) \_ (6/10(5/9)(8/10)
+
+Y ............. -............................ \_
+
+i=l
+
+Por lo tanto,
+
+P(0,/ NN) = 0
+
+Con estos valores se hace el análisis regresivo, calculando el valor esperado de cada nodo de azar y selec- cionando la ruta que proporcione el máximo valor futuro en cada nodo de decisión. Las rutas que no co- rresponden a los máximos se “cierran”. Como puede observarsc en el árbol, el VEM de cada rama después de pagar la experimentación, si la hay, es:
+
+VEM (es) = $2,800
+
+VEM (e1) = 3,520 —800 = $2,720 VEM (e2) = 4,240 — 1,200 = $3,040 VEM (no jugar) = $ 0
+
+de acuerdo con el criterio del VEM máximo, la decisión debe ser la opción ... pagar $1,200 para extraer dos bolas de la urna. Si ambas bolas son rojas, decidir a,: que la uma es del tipo 0,. Si una es roja y la otra negra, decidir a;: que la ua es del tipo 6. Si las dos bolas son negras, decidir a¡: urna tipo 0;
+
+49

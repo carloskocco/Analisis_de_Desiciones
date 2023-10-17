@@ -1,0 +1,31 @@
+GUÍA DE ESTUDIO DE LA ASIGNATURA ANÁLISIS DE DECISIONES - X -
+
+Ejemplo 9 ,
+
+Representar en un diagrama de árbol de decisión el ejemplo 4 y su solución.
+
+Solución
+
+El diagrama de árbol aparece en la siguiente figura. Obsérvese que el máximo valor esperado se obtiene \_ para la rama a, por lo tanto la decisión debe ser a,, pedir 200 playeras, y la decisión a¡ se descarta. Los — pagos están en miles de pesos.
+
+En la gráfica del árbol la ruta por a; “se cierra”, y se indica con dos líneas paralelas.
+
+Acción ' Estado (Demanda) Pagos
+
+(05) $200
+
+9 100
+
+175
+
+$210
+
+300 600
+
+Cuando al tomar una decisión además del valor esperado (VEM) también se considera el riesgo, resulta útil representar los resultados posibles de cada acción por medio de una distribución de probabilidad dis- creta, donde dichos resultados son considerados como los valores de una variable aleatoria que tenga probabilidades dadas. Esta gráfica también se llama perfil de riesgo de la acción.
+
+Ejemplo 10
+
+Representar el perfil de riesgo de los resultados de las acciones a y a, del ejemplo 4 y obtener también las gráficas de las distribuciones de probabilidad acumuladas correspondientes.
+
+37

@@ -1,0 +1,31 @@
+UNIDAD 3
+
+DECISIONES BAJO RIESGO
+
+Objetivo: Aplicar criterios de decisión bajo riesgo a problemas que disponen de información para
+
+poder elegir con mayor confianza.
+
+31 Criterios para la toma de decisiones sin experimentación
+
+Corresponde a criterios que consideran que el tomador de decisiones casi siempre tendrá alguna informa- ción sobre la posibilidad relativa de los estados de la naturaleza y puede traducirla en una distribución de probabilidad, considerando que el estado de la naturaleza es una variable aleatoria. En este caso la distri- bución se llama distribución deprobabilidad a priori oprevia. Las distribuciones a priori con frecuencia son subjetivas. '
+
+3\.1.1 Criterio de Laplace
+
+Es un criterio intermedio entre los no probabilísticos y los probabilísticos debido a que propone que, si se ignora por completo el estado de la naturaleza que podría ocurrir, se suponga que todos son igualmente factibles, con lo cual se asigna acada evento la misma probabilidad, se calcula el resultado esperado de cada alternativa y se elige la de mayor pago esperado.
+
+Ejemplo 3
+
+Aplicar el criterio de Laplace al ejemplo1 para encontrar la decisión recomendada.
+
+Solución
+
+Dado que existen 3 estados de la naturaleza posiblés, según el criterio de Laplace la probabilidad que se asigna a cada uno es igual a 1/3y el resultado esperado de cada alternativa es:
+
+Resultado esperado de a; = 1/3(2,000) + 1/3(1,750) + 1/3(1,500) = 1,750 Resultado esperado de a, = 1/3(0) + 1/3 (3,000) + 1/3(6,000) = 3,000
+
+Así, bajo este criterio, la decisión será
+
+max(1,750;3,000)= $3,000 correspondiente a a, pedir 200 playeras, puesto que su valor esperado es el mayor.
+
+25
