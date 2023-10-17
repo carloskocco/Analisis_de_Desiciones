@@ -11,179 +11,150 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Grupo de ejercicios 5 - -
 
-1\. Una moneda se lanza tres veces seguidas. Recibe $100 por cada cara (C) que aparezca y $25 adiciona- 4 les por cada dos caras seguidas que salgan (por ejemplo CCC incluye dos conjuntos de CC). Sin em- ... ss bargo, debe pagar $110 por cada águila (A) que salga. Tiene la opción de aceptar jugar o no. 'A: .....A
+1\. Una moneda se lanza tres veces seguidas. Recibe \$100 por cada cara (C) que aparezca y \$25 adiciona- 4 les por cada dos caras seguidas que salgan (por ejemplo CCC incluye dos conjuntos de CC). Sin embargo, debe pagar \$110 por cada águila (A) que salga. Tiene la opción de aceptar jugar o no.
 
-1) Dibuje el árbol de decisión para el juego.
-1) ¿Estaría dispuesto a participar en el juego? Qc
+ a) Dibuje el árbol de decisión para el juego.
 
-Respuesta: b) VEM(ugar) =-$2.5; VEM(no jugar) = $0. No conviene jugar.
+ b) ¿Estaría dispuesto a participar en el juego?
 
-A kz [07271 A
+Respuesta: b) VEM(ugar) =-\$2.5; VEM(no jugar) = \$0. No conviene jugar.
 
-I7/A(0PE
+2.  Usted tiene la oportunidad de participar en uno de dos negocios que van a establecerse. En el primero
 
-E Uste<i\_tíenf: la oportunidad de participar en uno de dos negocios que van a establecerse. En ;l;"¡;r\_¡rhero Q)
+(A~1~) si se tiene éxito obtendría una ganancia de \$100,000; si fracasa perderá \$100,000. En el segundo
 
-(A1) si se tiene éxito obtendría una ganancia de $100,000; si fracasa perderá $100,000. En el segundo
+(A~2~), si tiene éxito ganará \$10,000 y si fracasa le costará \$10,000.
 
-(A»), si tiene éxito ganará $10,000 y si fracasa le costará $10,000.
+ a) Dibuje un diagrama de árbol de decisión para ambas situaciones.
 
-1) Dibuje un diagrama de árbol de decisión para ambas situaciones.
-1) Encuentre la mejor decisión de acuerdo con los criterios de decisión bajo completa incertidumbre,
-1) Sipes la probabilidad que asigna al evento “éxito”, ¿bajo qué condiciones preferiría usted parti- cipar en A; o en A; y por qué?
-1) Utilizando pesos como variable aleatoria, represente los resultados como una distribución de pro- babilidad para p = 0.25 y para p = 0.75 y considere nuevamente su elección. ¿Cómo definiría el
+ b) Encuentre la mejor decisión de acuerdo con los criterios de decisión bajo completa incertidumbre.
 
-riesgo?
+ c) Sipes la probabilidad que asigna al evento "éxito", ¿bajo qué condiciones preferiría usted parti- cipar en A~1~ o en A~2~ y por qué?
+
+ d) Utilizando pesos como variable aleatoria, represente los resultados como una distribución de probabilidad para *p* = 0.25 y para *p* = 0.75 y considere nuevamente su elección. ¿Cómo definiría el riesgo?
 
 Respuestas: b) Maximin y Hurwicz: A,; Savage y Laplace: Ay 0 A;
 
-c) Si p <0.5 lo mejor es no participar. Si p = 0.5 elegir A; ó A; dependiendo del riesgo que se este dispuesto a afrontar. .d) Para p=0.25 se es arriesgado; para p = 0.75 se evade el riesgo
+c)  Si p \<0.5 lo mejor es no participar. Si p = 0.5 elegir A; ó A; dependiendo del riesgo que se este dispuesto a afrontar. .d) Para p=0.25 se es arriesgado; para p = 0.75 se evade el riesgo
 
-3. La empresa que usted asesora desea invertir $10,000 dólares en el mercado de valores comprando accio- nes de una de dos compañías: A o B. Las acciones de la compañía A representan un riesgo pero podrían dar un rendimiento del 50% sobre la inversión el siguiente año. Si las condiciones de la bolsa no son favorables, las acciones pueden perder 20% de su valor. La compañía B proporciona inversiones seguras con 15% de rendimiento en un mercado “a la alza” y sólo 5% en un mercado “a la baja”. Todas las publi- caciones que ha consultado predicen un 60% de posibilidades para un mercado “a la alza” y 40% para un mercado “a la baja”. ¿Dónde aconsejará a la empresa invertir el dinero? '
+```{=html}
+<!-- -->
+```
+3.  La empresa que usted asesora desea invertir \$10,000 dólares en el mercado de valores comprando acciones de una de dos compañías: A o B. Las acciones de la compañía A representan un riesgo pero podrían dar un rendimiento del 50% sobre la inversión el siguiente año. Si las condiciones de la bolsa no son favorables, las acciones pueden perder 20% de su valor. La compañía B proporciona inversiones seguras con 15% de rendimiento en un mercado "a la alza" y sólo 5% en un mercado "a la baja". Todas las publicaciones que ha consultado predicen un 60% de posibilidades para un mercado "a la alza" y 40% para un mercado "a la baja". ¿Dónde aconsejará a la empresa invertir el dinero?
 
 Respuesta: a) En las acciones de la compañía A.
 
-4. Su empresa ha firmado un contrato con un banco por $400,000 dólares para proveerle de chips “inteli- gentes” que integrarán a las nuevas tarjetas de crédito. Su Contador le reportó que los costos de admi-
+4.  Su empresa ha firmado un contrato con un banco por \$400,000 dólares para proveerle de chips "inteligentes" que integrarán a las nuevas tarjetas de crédito. Su Contador le reportó que los costos de administración, supervisión y de los materiales que requiere, serán de \$200,000 dólares.
 
-nistración, supervisión y de los materiales que requiere, serán de $200,000 dólares.
+En cuanto al costo de la mano de obra, usted y el sindicato acordaron someter a un arbitraje la cuestión u 39 del nivel de habilidad que debe tener el operador de la máquina que la empresa tendrá que adquirir y que sólo es útil para fabricar este pedido. Si usted gana el arbitraje, la mano de obra tendrá un costo de \$8 dólares por hora; si el sindicato gana, el costo será de \$12 dólares por hora. Existen dos tipos de máquina en el mercado: la máquina A cuesta \$140,000 dólares y requerirá 4,000 horas ---hombre para 4 hacer todo el pedido. La máquina B cuesta \$100,000 dólares y necesitará 8,000 horas ---hombre. Desafortunadamente usted debe decidir cual de las dos máquinas comprará varias semanas antes de que pueda conocer el resultado del arbitraje.
 
-En cuanto al costo de la mano de obra, usted y el sindicato acordaron someter a un arbitraje la cuestión u 39 del nivel de habilidad que debe tener el operador de la máquina que la empresa tendrá que adquirir y
+Las probabilidades a priori que su abogado.ha establecido para el resultado del arbitraje son del 0.7 para un fallo de \$8 y de 0.3 para el de \$12; pero si el resultado es este último, es posible apelarlo con un costo de \$9,000 dólares en cuyo caso ganar o perder la apelación, tienen la misma probabilidad de ocurrir. Siguiendo el criterio del VEM:
 
-que sólo es útil para fabricar este pedido. Si usted gana el arbitraje, la mano de obra tendrá un costo
+ a) Construya el árbol de decisión del problema.
 
-de $8 dólares por hora; si el sindicato gana, el costo será de $12 dólares por hora. Existen dos tipos de
+ b) ¿Qué máquina deberá comprar?
 
-máquina en el mercado: la máquina A cuesta $140,000 dólares y requerirá 4,000 horas —hombre para 4
-
-hacer todo el pedido. La máquina B cuesta $100,000 dólares y necesitará 8,000 horas —hombre. Des- A afortunadamente usted debe decidir cual de las dos máquinas comprará varias semanas antes de que
-
-pueda conocer el resultado del arbitraje. ' - . A
-
-Las probabilidades a priori que su abogado.ha establecido para el resultado del arbitraje son del 0.7 G¿
-
-para un fallo de $8 y de 0.3 para el de $12; pero si el resultado es este último, es posible apelarlo con
-
-un costo de $9,000 dólares en cuyo caso ganar o perder la apelación, tienen la misma probabilidad de .<< ...
-
-ocurrir. Siguiendo el criterio del VEM: ... -
-
-1) Construya el árbol de decisión del problema. Ú
-1) ¿Qué máquina deberá comprar? \*
-
-c)” Siel fallo del arbitraje lo obliga a pagar $12 /hora de trabajo ¿deberá apelar a la resolución?
+ c) Siel fallo del arbitraje lo obliga a pagar \$12 /hora de trabajo ¿deberá apelar a la resolución?
 
 Respuestas: b) Comprar la máquina B. c) Sí debe apelarse el fallo. Q
 
-AE A [07271 A
-
-I7/A(0PE
-
-5. Un cliente de una galería de arte está dispuesto a comprar la pintura “Ninfas” en $50,000. La galería Q) puede adquirir el cuadro hoy por $40,000 o puede esperar un día y compararlo mañana (si no se ha
-
-vendido) por $30,000. También podría esperar otro día y comprarla, si aún está disponible, por
-
-$26,000. Al final del tercer día la pintura no estará disponible para su venta, Cada día hay una probabi- D5 lidad de 0.6 de que sea vendida. ¿Qué estrategia deberá seguir la galería para maximiza la ganancia
-
-esperada? 0D 00
+5.  Un cliente de una galería de arte está dispuesto a comprar la pintura "Ninfas" en \$50,000. La galería Q) puede adquirir el cuadro hoy por \$40,000 o puede esperar un día y compararlo mañana (si no se ha vendido) por \$30,000. También podría esperar otro día y comprarla, si aún está disponible, por \$26,000. Al final del tercer día la pintura no estará disponible para su venta, Cada día hay una probabi- D5 lidad de 0.6 de que sea vendida. ¿Qué estrategia deberá seguir la galería para maximiza la ganancia esperada?
 
 Respuesta: Comprar el cuadro el primer día.
 
-6. Un agricultor puede plantar maíz o frijol de soya. Las probabilidades de que los precios de la siguiente cosecha de estos productos aumenten, permanezcan iguales o desciendan son 0.25, 0.30 y 0.45, res- pectivamente. Si los precios aumentan, la cosecha de maíz producirá $30,000 dólares netos y la soya $10,000 dólares netos; si permanecen sin cambio apenas quedará “a mano”, pero si los precios des- cienden, habrá pérdidas de $35,000 para la cosecha de maíz y de $5,000 para la de soya.
-1) Represente el problema en un árbol de decisión
-1) ¿Qué cosecha debe plantar el agricultor?
+6.  Un agricultor puede plantar maíz o frijol de soya. Las probabilidades de que los precios de la siguiente cosecha de estos productos aumenten, permanezcan iguales o desciendan son 0.25, 0.30 y 0.45, res- pectivamente. Si los precios aumentan, la cosecha de maíz producirá \$30,000 dólares netos y la soya \$10,000 dólares netos; si permanecen sin cambio apenas quedará "a mano", pero si los precios des- cienden, habrá pérdidas de \$35,000 para la cosecha de maíz y de \$5,000 para la de soya.
 
-Respuesta: VEM (maíz) = —$8,250; VEM(soya) = $250, debe plantar frijol de soya.
+ a) Represente el problema en un árbol de decisión
 
-7. Lacadena de comida rápida FME está por lanzar a nivel nacional un nuevo tipo de comida. El depar- tamento de investigación está convencido que será un gran éxito y lo quiere introducir de inmediato sin anuncios previos, mientras que el departamento de mercadotecnia quiere realizar una campaña in- tensiva de publicidad. Esta campaña costará $100,000 dólares y, si tiene éxito, producirá $850,000 de ganancia. Si la campaña no tiene éxito (y hay un 30% de posibilidad de ello), el ingreso se estima en sólo $100,000. Si no se usa la publicidad, el ingreso se estima en $400,000 con probabilidad de 0.8 si los clientes son receptivos y$200,000 con probabilidad 0.2 si no lo son.
-1) Dibuje el árbol de decisión.
-1) ¿Cuál curso de acción debe seguir FME para lanzar el producto?
+ b) ¿Qué cosecha debe plantar el agricultor?
+
+Respuesta: VEM (maíz) = ---\$8,250; VEM(soya) = \$250, debe plantar frijol de soya.
+
+7.  Lacadena de comida rápida FME está por lanzar a nivel nacional un nuevo tipo de comida. El depar- tamento de investigación está convencido que será un gran éxito y lo quiere introducir de inmediato sin anuncios previos, mientras que el departamento de mercadotecnia quiere realizar una campaña in- tensiva de publicidad. Esta campaña costará \$100,000 dólares y, si tiene éxito, producirá \$850,000 de ganancia. Si la campaña no tiene éxito (y hay un 30% de posibilidad de ello), el ingreso se estima en sólo \$100,000. Si no se usa la publicidad, el ingreso se estima en \$400,000 con probabilidad de 0.8 si los clientes son receptivos y \$200,000 con probabilidad 0.2 si no lo son.
+
+ a) Dibuje el árbol de decisión.  b) ¿Cuál curso de acción debe seguir FME para lanzar el producto?
 
 Respuesta:Hacer la campañadepublicidad,
 
-|<p>Acción|</p><p>Estado de la naturaleza</p>|ay a ay|
-| :- | :- |
-|0;|-100 60 20|
-|0,|160 80 60|
-|0;|40 140 —-60|
-|04|200 40 20|
-|0s —|0| 100 80|
+8.  Dada la siguiente matriz de pago dada en miles de pesos, represente el perfil de riesgo de cada acción utilizando "miles de pesos" como variable aleatoria:
 
-AE A [07271 A
++-------------------------+---------+---------+---------+---------+--------------+
+| Acción                  | a~1~    | a~2~    | a~3~    | a~4~    | Probabilidad |
+|                         |         |         |         |         |              |
+| Estado de la naturaleza |         |         |         |         |              |
++:========================+:========+:========+:========+:========+:=============+
+| \$\\theta\$~1~          | -100    | 60      | 20      | --20    | 0.08         |
++-------------------------+---------+---------+---------+---------+--------------+
+| \$\\theta\$~2~          | 160     | 80      | 60      | --100   | 0.10         |
++-------------------------+---------+---------+---------+---------+--------------+
+| \$\\theta\$~3~          | 40      | 140     | --60    | --140   | 0.50         |
++-------------------------+---------+---------+---------+---------+--------------+
+| \$\\theta\$~4~          | 200     | 40      | 20      | 40      | 0.12         |
++-------------------------+---------+---------+---------+---------+--------------+
+| \$\\theta\$~5~          | 0       | 100     | 80      | 400     | 0.20         |
++-------------------------+---------+---------+---------+---------+--------------+
 
-I7/A(0PE
+9.  Usted tiene la oportunidad de apostar en el siguiente juego en un casino: se tira un dado dos veces, lo que puede producir uno de cuatro resultados: (1) las dos veces cae el mismo número par, (2) las dos veces cae el mismo número impar, (3) los resultados son par - impar o 1mpar par y (4) todos los demás resultados.
 
-Se le permite apostar a exactamente dos resultados con igual cantidad de dinero. Por ejemplo, puede a apostar los mismos pesos a la pareja par (resultado 1) y a la pareja impar (resultado 2). El pago por ca- Q) da peso que apueste es de $2 para el primer resultado, $1.95 para el segundo y tercer resultados y
+Se le permite apostar a exactamente dos resultados con igual cantidad de dinero. Por ejemplo, puede a apostar los mismos pesos a la pareja par (resultado 1) y a la pareja impar (resultado 2). El pago por cada peso que apueste es de \$2 para el primer resultado, \$1.95 para el segundo y tercer resultados y \$1.50 para el cuarto resultado.
 
-$1.50 para el cuarto resultado.
+ a) Dibuje el árbol de decisión para eljuego.
 
-1) Dibuje el árbol de decisión para eljuego.
-1) ¿Cuáles dos resultados elegiría? El
-1) ¿Considera que alguna vez podrá ganar en estejuego?
+ b) ¿Cuáles dos resultados elegiría?
 
-Respuestas: b) El VEM de las 6 alternativas posibles es: (1,2) =—1.67; (1, 3) =-0.86; (1, 4) =-1.34;
+ c) ¿Considera que alguna vez podrá ganar en estejuego?
 
-(2, 3) =-0.86; (2, 4) =—1.34; (3, 4) = —0.53; elegiría (3, 4) y (1, 3) pero no conviene jugar. c) No
+Respuestas: b) El VEM de las 6 alternativas posibles es: (1,2) =---1.67; (1, 3) =-0.86; (1, 4) =-1.34;
 
-10. Una empresa manufacturera produce lotes de artículos con 0.8%, 1%, 1.2% y 1.4% de defectuosos, con una probabilidad de 0.4, 0.3, 0.25 y 0.05, respectivamente. Tres clientes, A, B y C, firman con- tratos para recibir lotes con un máximo de 0.8%, 1.2% y 1.4% de defectuosos, respectivamente. La empresa será penalizada con $1,000 dólares por punto porcentual si el porcentaje de defectuosos es mayor que el especificado en el contrato.
+(2, 3) =-0.86; (2, 4) =---1.34; (3, 4) = ---0.53; elegiría (3, 4) y (1, 3) pero no conviene jugar. c) No
 
-Por otra parte,suministrar lotes con mayor calidad de la requerida le cuesta a la empresa $500 dólares por punto porcentual. Si los lotes no se inspeccionan antes del embarque:
+10. Una empresa manufacturera produce lotes de artículos con 0.8%, 1%, 1.2% y 1.4% de defectuosos, con una probabilidad de 0.4, 0.3, 0.25 y 0.05, respectivamente. Tres clientes, A, B y C, firman con- tratos para recibir lotes con un máximo de 0.8%, 1.2% y 1.4% de defectuosos, respectivamente. La empresa será penalizada con \$1,000 dólares por punto porcentual si el porcentaje de defectuosos es mayor que el especificado en el contrato.
 
-1) Dibuje el árbol de decisión del problema.
-1) ¿Cuál de los tres clientes debe tener la prioridad más alta para recibir su orden apegada al contrato?
+Por otra parte,suministrar lotes con mayor calidad de la requerida le cuesta a la empresa \$500 dólares por punto porcentual. Si los lotes no se inspeccionan antes del embarque:
+
+ a) Dibuje el árbol de decisión del problema.
+
+ b) ¿Cuál de los tres clientes debe tener la prioridad más alta para recibir su orden apegada al contrato?
 
 Respuesta:b) El clienteC
 
-11. La empresa CAR, S.A. renta automóviles al precio de $100 por día y cada contrato es exactamente de un día. A su vez, CAR, S.A. alquila los autos a la agencia mayorista “EN-Auto, S.A de C.V.” a un costo de $70 por día, precio que incluyen el mantenimiento de las unidades. El gerente de CAR, S.A. debe solicitar a la agencia mayorista el número de vehículos que necesitará alquilar cada día y entre-
+11. La empresa CAR, S.A. renta automóviles al precio de \$100 por día y cada contrato es exactamente de un día. A su vez, CAR, S.A. alquila los autos a la agencia mayorista "EN-Auto, S.A de C.V." a un costo de \$70 por día, precio que incluyen el mantenimiento de las unidades. El gerente de CAR, S.A. debe solicitar a la agencia mayorista el número de vehículos que necesitará alquilar cada día y entre- gar la solicitud, cuando menos, con una semana de anticipación.
 
-|Demanda Número|de días Frecuencia relativa|
-| :- | :- |
-|11 10|.10|
-|12 15|.15|
-|13 20|.20|
-|14 25|- .25|
-|15 18|.18|
-|2 16 1|.12|
+Del registro de operaciones diarias de CAR, S.A. se encuentra el número de solicitudes de renta que ha tenido en los últimos 100 días:
 
-CAR, S.A. deberá solicitar a “EN-Auto, S.A. de C.V.” para maximizar su beneficio neto esperado.
+| Demanda | Número de días | Frecuencia relativa |
+|:--------|:---------------|:--------------------|
+| 11      | 10             | .10                 |
+| 12      | 15             | .15                 |
+| 13      | 20             | .20                 |
+| 14      | 25             | .25                 |
+| 15      | 18             | .18                 |
+| 16      | 12             | .12                 |
 
-Respuesta: Máximo VEM (13) = $355; debe solicitar 13 unidades.
+Si se supone que el periodo de 100 días es una muestra representativa del comportamiento aleatorio pa- sado de la demanda, que no habrá cambios futuros en el comportamiento observado de ésta, y que el número de solicitudes para renta es completamente aleatorio, encuentre el número de automóviles que CAR, S.A. deberá solicitar a "EN-Anuto, S.A. de C.V." para maximizar su beneficio neto esperado.
 
-|<p>Opciones</p><p>Demanda (6;)</p>|<p>Personal</p><p>propio</p>|<p>Asesor</p><p>externo</p>|<p>Combinación</p><p>de los dos</p>|Probabilidades|
-| :- | :- | :- | :- | :- |
-|Alta|650|900|800|0\.2|
-|Media|650|600|650|0\.5|
-|Baja|600|300|500|0\.3|
+Respuesta: Máximo VEM (13) = \$355; debesolicitar 13unidades.
 
+12\. La corporación AR está considerando 3 opciones para manejar su proceéamiento de datos: continuar con su personal; contratar una asesoría externa para que haga la administración, o una combinación de las dos anteriores. El costo anual de cada opción depende de la demanda futura como sigue:
 
++--------------------------+----------+---------+-------------+----------------+
+| Opciones                 | Personal | Asesor  | Combinación | Probabilidades |
+|                          |          |         |             |                |
+| Demanda ($\theta$~1~)    | propio   | externo | de los dos  |                |
++:=========================+:=========+:========+:============+:===============+
+| Alta                     | 650      | 900     | 800         | 0.2            |
++--------------------------+----------+---------+-------------+----------------+
+| Media                    | 650      | 600     | 650         | 0.5            |
++--------------------------+----------+---------+-------------+----------------+
+| Baja                     | 600      | 300     | 500         | 0.3            |
++--------------------------+----------+---------+-------------+----------------+
 
-1) ¿Qué alternativa de decisión minimiza el costo esperado de la operación de procesamiento de da- tos y cuál es el costo anual asociado con esa recomendación?
-1) Construya un perfil de riesgo para la decisión óptima.
-1) ¿Cuál es la probabilidad de que el costo exceda de $700,000.
-1) Haga el análisis de sensibilidad considerando las acciones a con a, y ay con az.
+\ a)  ¿Qué alternativa de decisión minimiza el costo esperado de la operación de procesamiento de datos y cuál es el costo anual asociado con esa recomendación?
 
-Respuesta: a) Contratar un asesor externo; costo esperado: $ 570,000. c)0.2.
+\ b) Construya un perfil de riesgo para la decisión óptima.
 
-3\.5 Criterios para la toma de decisiones con experimentación
+\ c) ¿Cuál es la probabilidad de que el costo exceda de \$700,000.
 
-Se llama también análisis a posteriori porque el VEM (ganancias esperadas) se calcula utilizando las pro- babilidades a priori modificadas a partir de información adicional que se obtiene a través de análisis, experimentación, ensayos, muestreo, etcétera. La intención es reducir la incertidumbre y con ello su costo. Para calcular las probabilidades revisadas o probabilidades a posteriori se utiliza el Teorema de Bayes.
+\ d) Haga el análisis de sensibilidad considerando las acciones a~1~ con a~2~ y a~2~ con a~3~.
 
-Al disponer de más información como resultado de la experimentación, es necesario revisar el valor de la
-
-información adicional, es decir, el valor esperado a posteriori de la información perfecta. Este se calcula 94 restando a las ganancias esperadas a posteriori con base en una información perfecta, las ganancias w¿
-
-esperadas a posteriori, calculadas en condiciones de riesgo (VEM con las probabilidades a posteriori).
-
-En el análisis a posteriori el VEIP será menor que en el caso del análisis a priori, cuando se disponía de n menos información. “a
-
-v Por otra parte, también es necesario analizar si vale la pena pagar el costo del muestreo para obtener mayor o
-
-información, comparándolo con el valor esperado de la información de un plan de muestreo cualquiera. 4
-
-Ejemplo 11 .\_6\_.¿ N Considérese un conjunto de 1,000 urnas identificadas como del tipo 0; y 01, donde cada urna: ¿
-
-0; contiene 4 bolas rojas y 6 bolas negras, y Q\*¿ Q 0, contiene 9 bolas rojas y 1 bola negra. —
-
-De las 1,000 urnas, 800 son del primer tipo y 200 del segundo, y
-
-||||a [0727: 1 A kz|
-| :- | :- | :- | :- |
+Respuesta: a) Contratar un asesor externo; costo esperado: \$ 570,000. c)0.2.

@@ -11,73 +11,92 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Grupo de ejercicios 4
 
-1. Considere la siguiente matriz de pago y la distribución de probabilidades previa asignada por el toma- dor de decisiones:
+1.  Considere la siguiente matriz de pago y la distribución de probabilidades previa asignada por el toma- dor de decisiones:
 
-|<p>Acción</p><p>Estado de la naturaleza</p>|a|ay|as|Probabilidad|
-| :- | :- | :- | :- | :- |
-|[|10|5|2|1/4|
-|0,|6|8|5|1/2|
-|0;|3|4|9|1/4|
++-------------------------+-----------+-----------+-----------+--------------+
+| Acción                  | a~1~      | a~2~      | a~3~      | Probabilidad |
+|                         |           |           |           |              |
+| Estado de la naturaleza |           |           |           |              |
++:========================+:==========+:==========+:==========+:=============+
+| \$\\theta\$~1~          | 10        | 5         | 2         | 1/4          |
++-------------------------+-----------+-----------+-----------+--------------+
+| \$\\theta\$~2~          | 6         | 8         | 5         | 1/2          |
++-------------------------+-----------+-----------+-----------+--------------+
+| \$\\theta\$~3~          | 3         | 4         | 9         | 1/4          |
++-------------------------+-----------+-----------+-----------+--------------+
 
+ a) Especifique la matriz de pérdida de oportunidad
 
+ b) Calcule el valor esperado de la información perfecta (VEIP)
 
-1) Especifique la matriz de pérdida de oportunidad
-1) Calcule el valor esperado de la información perfecta (VEIP)
-1) Si pudiera comprar mformacxón perfecta por $2 sobre cuál es el verdadero evento, ¿la compraría
-
-usted?
+ c) Si pudiera comprar mformacxón perfecta por \$2 sobre cuál es el verdadero evento, ¿la compraría usted?
 
 Respuestas:b)2.5c) Sí.
 
-2. Explique la diferencia entre las pérdidas de oportunidad esperadas y el valor esperado de la informa- ción perfecta.
-2. Dadala siguiente matriz de pago cuyos resultados están expresados en mil& de pesos:
+2.  Explique la diferencia entre las pérdidas de oportunidad esperadas y el valor esperado de la informa- ción perfecta.
 
-|<p>Acción</p><p>Estado de la naturaleza</p>|as|a,|as|<p>ay</p><p>.</p>|Probabilidad|
-| :- | :- | :- | :- | :- | :- |
-|0, (demanda alta) —.|180|150|160|110|0\.5|
-|6, (demanda mediana)|80|120|120|100|0\.3|
-|0; (demanda baja) — .|20|so|30|80|0\.2|
+3.  Dadala siguiente matriz de pago cuyos resultados están expresados en mil& de pesos:
+
++---------------------------------+--------+--------+--------+--------+--------------+
+| Acción                          | a~1~   | a~2~   | a~3~   | a~4~   | Probabilidad |
+|                                 |        |        |        |        |              |
+| Estado de la naturaleza         |        |        |        |        |              |
++:================================+:=======+:=======+:=======+:=======+:=============+
+| \$\\theta\$~1~(demanda alta)    | 180    | 150    | 160    | 110    | 0.5          |
++---------------------------------+--------+--------+--------+--------+--------------+
+| \$\\theta\$~2~(demanda mediana) | 80     | 120    | 120    | 100    | 0.3          |
++---------------------------------+--------+--------+--------+--------+--------------+
+| \$\\theta\$~3~(demanda baja)    | 20     | so     | 30     | 80     | 0.2          |
++---------------------------------+--------+--------+--------+--------+--------------+
 
 Encuentre:
 
-1) Las ganancias esperadas en condiciones de certeza.
-1) Las ganancias esperadas en condiciones de riesgo.
-1) El costo de la incertidumbre.
-1) ¿Cuánto estaría dispuesto a pagar por la información de un “pronosticador perfecto”?
+ a) Las ganancias esperadas en condiciones de certeza.
 
-Respuestas: a) $142,000; b)$122,000; c) $20,000; d)hasta $20,000.
+ b) Las ganancias esperadas en condiciones de riesgo.
 
-4. Un ingeniero mexicano inventó un dispositivo nuevo y lo patentó. Tiene dos propuestas para su fabri- cación: un banco ofrece prestarle el dinero necesario para que él mismo lo fabrique, y una empresa con mucha presencia en el país le ofreció comprarle la patente con un valor que varía de acuerdo con las ventas que alcance el dispositivo. Después de una amplia investigación sobre la experiencia pasada con dispositivos similares y de entrevistas con expertos, el ingeniero estimó tanto los beneficios que
+ c) El costo de la incertidumbre.
 
-puede obtener en los próximos cinco años con cada pos1b1hdad como las probabxhdades de los esta- dos de la naturaleza que pueden presentarse dados los niveles de ventas:
+ d) ¿Cuánto estaría dispuesto a pagar por la información de un "pronosticador perfecto"?
 
-|<p>Acción</p><p>Estado de la naturaleza —</p>|<p>aj</p><p>fabricar él mismo</p>|<p>a,</p><p>vender patente</p>|Probabilidad|
-| :- | :- | :- | :- |
-|0¡: ventas altas|12,000,000|6,000,000|0\.2|
-|6: ventas regulares|3,000,000.|1,000,000|- 0.5|
-|0;: ventas bajas|—750,000|150,000|0\.3|
+Respuestas: a) \$142,000; b)\$122,000; c) \$20,000; d)hasta \$20,000.
 
+4.  Un ingeniero mexicano inventó un dispositivo nuevo y lo patentó. Tiene dos propuestas para su fabri- cación: un banco ofrece prestarle el dinero necesario para que él mismo lo fabrique, y una empresa con mucha presencia en el país le ofreció comprarle la patente con un valor que varía de acuerdo con las ventas que alcance el dispositivo. Después de una amplia investigación sobre la experiencia pasada con dispositivos similares y de entrevistas con expertos, el ingeniero estimó tanto los beneficios que puede obtener en los próximos cinco años con cada pos1b1hdad como las probabxhdades de los esta- dos de la naturaleza que pueden presentarse dados los niveles de ventas:
 
++------------------------------+--------------+--------------+--------------+
+| Acción                       | a~1~         | a~2~         | Probabilidad |
+|                              |              |              |              |
+| Estado de la naturaleza      |              |              |              |
++:=============================+:=============+:=============+:=============+
+| $\theta$~1~(ventas altas)    | 12,000,000   | 6,000,000    | 0.2          |
++------------------------------+--------------+--------------+--------------+
+| $\theta$~2~(ventas medianas) | 3,000,000.   | 1,000,000    | 0.5          |
++------------------------------+--------------+--------------+--------------+
+| $\theta$~3~(ventas bajas)    | --750,000    | 150,000      | 0.3          |
++------------------------------+--------------+--------------+--------------+
 
-1) ¿Qué decisión deberá tomar el ingeniero para obtener el mayor beneficio en los próximos cinco años?
-1) ¿Cuálesel VEIP y el costo de la incertidumbre?
-1) Sile ofrecen información perfecta por $300,000 ¿debería comprarla?
+ a) ¿Qué decisión deberá tomar el ingeniero para obtener el mayor beneficio en los próximos cinco años?
 
-Respuesta:a)a; \_b)VEIP = CI= $270,000 c)No.
+ b)¿Cuálesel VEIP y el costo de la incertidumbre?
 
-5. El Gerente de personal de una empresa de transporte debe decidir si contrata o no a un nuevo mecáni- co. Si el empleado desempeña muy bien su trabajo, la empresa ahorrará $125,000 al año en el mante- nimiento de su flotilla de camiones; si hace un trabajo regular podría ahorrar $40,000 anuales, pero si su trabajo es pésimo, puede perder hasta $165,000. Por los datos de la solicitud ha asignado las si- guientes probabilidades subjetlvas a dichos eventos:
+ c) Sile ofrecen información perfecta por \$300,000 ¿debería comprarla?
 
-p (trabajo excelente) = 0.30; p (trabajo regular) = 0.40; p (trabajo pésimo) = 0.30
+Respuesta:a)a; \_b)VEIP = CI= \$270,000 c)No.
 
-1) ¿Deberá contratar a este solicitante?
-1) ¿Hasta cuánto debería estar dispuesto a pagar por un pronosticador perfecto que le diga en qué forma desempeñará el mecánico su trabajo?
+5.  El Gerente de personal de una empresa de transporte debe decidir si contrata o no a un nuevo mecánico. Si el empleado desempeña muy bien su trabajo, la empresa ahorrará \$125,000 al año en el mantenimiento de su flotilla de camiones; si hace un trabajo regular podría ahorrar \$40,000 anuales, pero si su trabajo es pésimo, puede perder hasta \$165,000. Por los datos de la solicitud ha asignado las siguientes probabilidades subjetlvas a dichos eventos:
 
-Respuestas:a) Sí b) hasta$49,500.
+*p* (trabajo excelente) = 0.30; *p* (trabajo regular) = 0.40; *p* (trabajo pésimo) = 0.30
 
-6. Calcule el valor esperado de la información perfecta por el método 2 de la POE para los problemas 2, 6 y 7 del Grupo de ejercicios 3 (páginas 28, 29 y 30).
+\ a) ¿Deberá contratar a este solicitante?
 
-Respuestas:problema2: a; conVEIP = $35; problema6: aycon VEIP = $2,400; problema7: a; conVEIP = $7,500.
+\ b) ¿Hasta cuánto debería estar dispuesto a pagar por un pronosticador perfecto que le diga en qué forma desempeñará el mecánico su trabajo?
 
-7. Calcule el VEIP por el método 1 para el problema 5 del Grupo de ejercicios 3 (página 29).
+Respuestas:a) Sí b) hasta\$49,500.
 
-Respuesta:$87.2.
+6.  Calcule el valor esperado de la información perfecta por el método 2 de la POE para los problemas 2, 6 y 7 del Grupo de ejercicios 3 (páginas 28, 29 y 30).
+
+Respuestas:problema2: a; conVEIP = \$35; problema6: aycon VEIP = \$2,400; problema7: a; conVEIP = \$7,500.
+
+7.  Calcule el VEIP por el método 1 para el problema 5 del Grupo de ejercicios 3 (página 29).
+
+Respuesta:\$87.2.
