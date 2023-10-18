@@ -1,539 +1,481 @@
----
-title: "Unidad 3"
-author: "Carlos Manuel Gómez Miranda"
-date: "2023-10-5"
-output: html_document
----
+|                                      |
+|--------------------------------------|
+| itle: "Unidad 3"                     |
+| uthor: "Carlos Manuel Gómez Miranda" |
+| ate: "2023-10-5"                     |
+| utput: html_document                 |
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-UNIDAD 3
+#UNIDAD 3
 
 DECISIONES BAJO RIESGO
 
-Objetivo: Aplicar criterios de decisión bajo riesgo a problemas que disponen de información para
+##Objetivo: Aplicar criterios de decisión bajo riesgo a problemas que disponen de información para poder elegir con mayor confianza.
 
-poder elegir con mayor confianza.
-
-31 Criterios para la toma de decisiones sin experimentación
+##3.1 Criterios para la toma de decisiones sin experimentación
 
 Corresponde a criterios que consideran que el tomador de decisiones casi siempre tendrá alguna informa- ción sobre la posibilidad relativa de los estados de la naturaleza y puede traducirla en una distribución de probabilidad, considerando que el estado de la naturaleza es una variable aleatoria. En este caso la distri- bución se llama distribución deprobabilidad a priori oprevia. Las distribuciones a priori con frecuencia son subjetivas. '
 
-3\.1.1 Criterio de Laplace
+3.1.1 *Criterio de Laplace*
 
 Es un criterio intermedio entre los no probabilísticos y los probabilísticos debido a que propone que, si se ignora por completo el estado de la naturaleza que podría ocurrir, se suponga que todos son igualmente factibles, con lo cual se asigna acada evento la misma probabilidad, se calcula el resultado esperado de cada alternativa y se elige la de mayor pago esperado.
 
-Ejemplo 3
+##Ejemplo 3
 
 Aplicar el criterio de Laplace al ejemplo1 para encontrar la decisión recomendada.
 
-Solución
+##Solución
 
-Dado que existen 3 estados de la naturaleza posiblés, según el criterio de Laplace la probabilidad que se asigna a cada uno es igual a 1/3y el resultado esperado de cada alternativa es:
+Dado que existen 3 estados de la naturaleza posiblés, según el criterio de Laplace la probabilidad que se asigna a cada uno es igual a 1/3 y el resultado esperado de cada alternativa es:
 
-Resultado esperado de a; = 1/3(2,000) + 1/3(1,750) + 1/3(1,500) = 1,750 Resultado esperado de a, = 1/3(0) + 1/3 (3,000) + 1/3(6,000) = 3,000
+Resultado esperado de a~1~ = 1/3(2,000) + 1/3(1,750) + 1/3(1,500) = 1,750
+
+Resultado esperado de a~2~ = 1/3(0) + 1/3 (3,000) + 1/3(6,000) = 3,000
 
 Así, bajo este criterio, la decisión será
 
-max(1,750;3,000)= $3,000 correspondiente a a, pedir 200 playeras, puesto que su valor esperado es el mayor.
+max{1,750;3,000}= \$3,000
 
-3.1.2Criteriode-la max;mapos:bzlzaaa
+correspondiente a a~2~, pedir 200 playeras, puesto que su valor esperado es el mayor.
 
-En este criterio se 1dent1ñcael estadode la naturaleza que t1enela probabllldad de ocurrencia más grande y, para este estado, se elige 1aacc1ón con el máx1mo pagoasociado. — —
+3.1.2 *Criterio de la máxima posibilidad*
 
-Ejemplo 4 '
+En este criterio se identifica el estadode la naturaleza que t1enela probabllldad de ocurrencia más grande y, para este estado, se elige 1aacc1ón con el máximo pagoasociado.
 
-Para el e\_¡emplo1, aplique el criterio de la máxima pos¡b1hdad para decidir qué pedido debe solicitarse al proveedor si se estima que la probabilidad de que la demanda sea de 100 playeras es 0.5, de que aumente a 150 prendas es 0.3, y para 200 playeras 0.2 :
+##Ejemplo 4
 
-Solución
+Para el ejemplo 1, aplique el criterio de la máxima pos¡b1hdad para decidir qué pedido debe solicitarse al proveedor si se estima que la probabilidad de que la demanda sea de 100 playeras es 0.5, de que aumente a 150 prendas es 0.3, y para 200 playeras 0.2 :
 
-|<p>Acción (pedido)</p><p>Estado de la naturaleza (demanda)</p>|<p>a</p><p>100</p>|<p>a</p><p>— 200</p>|Probabilidad|
-| :- | :- | :- | :- |
-|0,= 100 -|2,000|0|0\.5|
-|0,= 150|1,750|3,000|0\.3|
-|0; =200|1,500|6,000|0\.2|
++------------------------------------+------------+------------+----------------+
+| Accióin (pedido)                   | a~1~       | a~2~       | Probabilidades |
+|                                    |            |            |                |
+| Estado de la naturaleza (demanda ) | 100        | 200        |                |
++:===================================+:===========+:===========+:===============+
+| \$\\theta\$~1~ =100                | 2,000      | 0          | 0.5            |
++------------------------------------+------------+------------+----------------+
+| \$\\theta\$~1~ =150                | 1,750      | 3,000      | 0.3            |
++------------------------------------+------------+------------+----------------+
+| \$\\theta\$~1~ =200                | 1500       | 6,000      | 0.2            |
++------------------------------------+------------+------------+----------------+
 
-El estado de la naturaleza con mayor probabilidad es 01,y para este estado el mejor resultado se obtiene con la acción ... por lo tanto la decisión bajo el criterio de la máxima pos¡b1hdad será pedir 100 playeras al proveedor.
+El estado de la naturaleza con mayor probabilidad es \$\\theta\$~1~ ,y para este estado el mejor resultado se obtiene con la acción a~1~ ; por lo tanto la decisión bajo el criterio de la máxima pos¡b1hdad será pedir 100 playeras al proveedor.
 
-3\.1.3 Regla de decisión de Bayes (maximización del valor esperado VEM)
+3.1.3 *Regla de decisión de Bayes (maximización del valor esperado VEM)*
 
-Usando las mejores estimaciones disponibles de las probabilidades a priori para los estados de la natura- leza, se calcula el valor esperado del pago de cada acción posible y de ellos se elige el mayor Para aplicar este criterio es necesario:
+Usando las mejores estimaciones disponibles de las probabilidades a priori para los estados de la naturaleza, se calcula el valor esperado del pago de cada acción posible y de ellos se elige el mayor Para aplicar este criterio es necesario:
 
-1) Determinar una probabilidad para cada estado de la naturaleza, de manera que la suma de ellas sea igual a 1.
-1) Calcular el valor esperado (VEM) de cada acción, lo que se obtiene de la suma de los produc- tos de cada resultado por su probabilidad.
-1) Elegir una acción cuyo valor esperado sea el mayor.
+ a) Determinar una probabilidad para cada estado de la naturaleza, de manera que la suma de ellas sea igual a 1.
+
+ b) Calcular el valor esperado (VEM) de cada acción, lo que se obtiene de la suma de los produc- tos de cada resultado por su probabilidad.
+
+ c) Elegir una acción cuyo valor esperado sea el mayor.
 
 Este método puede ajustarse para el cálculo de utilidades esperadas cuando la maximización de los pagos esperados no es un criterio adecuado de elección.
 
-Ejemplo 5.
+##Ejemplo 5.
 
-Para los datos del ejemplo 4, aplique el criterio del máximo valor esperado (VEM) para dec1d1rqué pedido debe solicitarse aí proveedor.
+Para los datos del ejemplo 4, aplique el criterio del máximo valor esperado (VEM) para dec1d1rqué pedido debe solicitarse al proveedor.
 
-Solucjón
+##Solución
 
-a) P(91)+P(82)e'P(93)=1
+ a) P(\$\\theta\$~1~)+P(\$\\theta\$~2~) +P(\$\\theta\$~3~)=1
 
+ b) Calcular el valor esperado de cada acción a; como la suma de los productos del resultado del par (0;, a;) por la probabilidad estimada de 6; :
 
-2) Calcular el valor esperado de cada acción a; como la suma de los productos del resultado del par (0;, a;) por la probabilidad estimada de 6; :
+VEM (a~1~) = 2000 (0.5) + 1750 (0.3) + 1500 (0.2) = 1,825
 
-VEM (a1) = 2000 (0.5) + 1750 (0.3) + 1500 (0.2) = 1,825 VEM (a) = 0 (0.5) + 3000 (0.3) + 6000 (0.2) =2,100
+VEM (a~2~) = 0 (0.5) + 3000 (0.3) + 6000 (0.2) =2,100
 
-3) El máximo de (1,825; 2,100) = $2,100. Por lo tanto, la mejor decisión para lograr la meta de maximizar la ganancia esperada (VEM) es a;: hacer un pedido de 200 playeras.
+ c) El máximo de (1,825; 2,100) = \$2,100. Por lo tanto, la mejor decisión para lograr la meta de maximizar la ganancia esperada (VEM) es a~2~ : hacer un pedido de 200 playeras.
 
 Debe tenerse presente que el VEM es un indicador que resume una estadística completa de resultados, por lo que el decisor puede encontrarse tomando decisiones inconsistentes con sus preferencias psicológicas y sus actitudes frente al riesgo. En la siguiente unidad se presentará la forma de resolver esta problemática.
 
-3\.1.4 Minimización de la pérdida de oportunidad esperada (POE)
+3.1.4 *Minimización de la pérdida de oportunidad esperada* **(POE)**
 
-La pérdida de oportunidad esperada (POE) se calcula utilizando las probabilidades de los estados de la naturaleza como ponderadores de la pérdida de oportunidad obtenida bajo el criterio de Savage. La suma de estos resultados da la pérdida de oportunidad promedio para cada acción, y se elige la acción con la menor pérdida de oportunidad esperada (menor arrepentimiento).
+La **pérdida de oportunidad esperada** (POE) se calcula utilizando las probabilidades de los estados de la naturaleza como ponderadores de la pérdida de oportunidad obtenida bajo el criterio de Savage. La suma de estos resultados da la *pérdida de oportunidad promedio* para cada acción, y se elige la acción con la menor pérdida de oportunidad esperada (menor arrepentimiento).
 
-Ejemplo 6
+##Ejemplo 6
 
 Para el ejemplo 4, determinar la acción que debe elegirse de acuerdo con el criterio de la mínima pérdida de oportunidad esperada (POE).
 
-Solución
+##Solución
 
-Para la acción a1,pedir 100 playeras:
+Para la acción a~1~,pedir 100 playeras:
 
-|<p>Acción (pedido)</p><p>Estado de la naturaleza (demanda)</p>|<p>Pérdida de</p><p>oportunidad</p>|Probabilidad|<p>Pérdida de oportunidad</p><p>ponderada</p>|
-| :- | :- | :- | :- |
-|' 0,= 100|0|0\.5|0|
-|0,= 150|1,250|0\.3|375|
-|0; =200|4,500|0\.2|900|
-|Pérdida de oportunidad esperada|||1,275|
-|<p>Acción (pedido)</p><p>Estado de la naturaleza (demanda)</p>|<p>Pérdida de</p><p>oportunidad</p>|Probabilidad|<p>Pérdida de oportunidad</p><p>ponderada</p>|
-|0,= 100|2,000|0\.5|1,000|
-|0,= 150|0|0\.3|0|
-|0; =200|0|0\.2|0|
-|Pérdida de oportunidad esperada|||1,000|
++-------------------------+-------------+--------------+----------------------------------+
+| Acción (pedido)         | Pérdida de  | Probabilidad | Pérdida de oportunidad ponderada |
+|                         |             |              |                                  |
+| Estado de la naturaleza | oportunidad |              |                                  |
+|                         |             |              |                                  |
+| (demanda)               |             |              |                                  |
++:========================+:============+:=============+:=================================+
+| \$\\theta\$~1~ = 100    | 0           | 0.5          | 0                                |
++-------------------------+-------------+--------------+----------------------------------+
+| \$\\theta\$~2~ = 150    | 1,250       | 0.3          | 375                              |
++-------------------------+-------------+--------------+----------------------------------+
+| \$\\theta\$~3~ = 200    | 4,500       | 0.2          | 900                              |
++-------------------------+-------------+--------------+----------------------------------+
+| Pérdida de oportunidad  |             |              | 1,275                            |
+|                         |             |              |                                  |
+| esperada                |             |              |                                  |
++-------------------------+-------------+--------------+----------------------------------+
+
+Para la acción a~2~, pedir 200 playeras:
+
++-----------------------------------+-------------+--------------+----------------------------------+
+| Acción (pedido)                   | Pérdida de  | Probabilidad | Pérdida de oportunidad ponderada |
+|                                   |             |              |                                  |
+| Estado de la naturaleza (demanda) | oportunidad |              |                                  |
++:==================================+:============+:=============+:=================================+
+| \$\\theta\$~1~ = 100              | 2,000       | 0.5          | 1,000                            |
++-----------------------------------+-------------+--------------+----------------------------------+
+| \$\\theta\$~2~ = 150              | 0           | 0.3          | 0                                |
++-----------------------------------+-------------+--------------+----------------------------------+
+| \$\\theta\$~3~ = 200              | 0           | 0.2          | 0                                |
++-----------------------------------+-------------+--------------+----------------------------------+
+| Pérdida de oportunidad            |             |              | 1,000                            |
+|                                   |             |              |                                  |
+| esperada                          |             |              |                                  |
++-----------------------------------+-------------+--------------+----------------------------------+
 
 Bajo el criterio de la mínima pérdida de óportunidad esperada, la decisión será:
 
-minf1,275;1,000)= $1,000
+min{1,275;1,000}= \$1,000
 
-.....o ..
+Y corresponde a la accion a~2~ , pedir 200 playeras
 
-Y corresponde.alá-Áéción—¿1¿—i;e&ií-¿200plaietaf=-
+Obsérvese que para cada acción la suma del VEM (ejemplo 5) y la POE es la misma cantidad:
 
-Obsérvese que para cada acc¡on 1asuma fiel VEM (ejemplo 5) y la POE es la misma cantidad: —— .> y2 ————————————
+Para a~1~ : 1,825 + 1,275 = \$3,000 ; para a~2~ : 2,100 + 1,000 \$3,100
 
-Pam'alº'1 825+1 275 $3 1oopara as 2100+1000 $3,100
+y es, precisamente el valor esperado monetano *en condiciones de certeza.*
 
-y es, prec¡samente el valor esperado monetano en condzczones de certeza
+##3.2 Valor esperado de la información perfecta (VEIP)
 
-3\.2 Valor esperado de la información perfecta (VEIP)
+Las probabilidades consideradas para el criterio del VEM se llaman *probabilidades previas* porque fueron establecidas antes de obtener información adicional mediante pruebas, experimentos o muestreo. Por esta razón, la elección de una acción basada en el criterio del VEM también se denomina *análisis previo.* Sin embargo, un dato muy valioso que es común determinar es el *valor de la información perfecta*, y para ello es necesario calcular el *valor* ***esperado*** *de la información perfecta* **(VEIP)**. Se presentan dos de los méto- dos que existen para calcularlo.
 
-Las probabilidades consideradas para el criterio del VEM se llaman probabilidades previas porque fueron establecidas antes de obtener información adicional mediante pruebas, experimentos o muestreo. Por esta razón, la elección de una acción basada en el criterio del VEM también se denomina análisis previo. Sin embargo, un dato muy valioso que es común determinar es el valor de la información perfecta, y para ello es necesario calcular el valor esperado de la información perfecta (VEIP). Se presentan dos de los méto- dos que existen para calcularlo.
-
-3\.2.1 Método 1
+3.2.1 *Método 1*
 
 El VEIP se determina restando al valor monetario esperado bajo certeza, el máximo valor esperado bajo incertidumbre, que se ha denotado como VEM:
 
-VEIP = Valor monetarioesperado — | Valor monetarioesperado
+VEIP = (Valor monetarioesperado) -- (Valor monetarioesperado bajo certeza bajo incertidumbre(VEM))
 
-bajo certeza bajo incertidumbre(VEM)
+El valor esperado bajo certeza es el resultado que se obtendría si se pudiéra tomar la decisión después de saber el estado de la naturaleza que se materializó (en cuyo caso se tendría la información perfecta).
 
-El valor esperado bajo certeza es el resultado que se obtendría si se pudiéra tomar .1\_adecísi¿f1 después de saber el estado de la naturaleza que se materializó (en cuyo caso se tendría la información perfecta).
-
-Ejemplo 7 '
+##Ejemplo 7
 
 Encontrar el valor esperado de la información perfecta para el ejemplo 4 (página 26).
 
-||||E|
-| :- | :- | :- | :- |
-|<p>Acción (pedido)</p><p>Estado de la naturaleza (demanda)</p>|<p>a</p><p>100</p>|<p>ay</p><p>200</p>|<p>4</p><p>Probabilidad</p>|
-|0,= 100|2,000|0|0\.5|
-|0,= 150|1,750|3,000|0\.3|
-|0; =200|1,500|6,000|0\.2|
++-----------------------------------+------------+------------+--------------+
+| Acción (pedido)                   | a~1~       | a~2~       | Probabilidad |
+|                                   |            |            |              |
+| Estado de la naturaleza (demanda) | 100        | 200        |              |
++===================================+============+============+==============+
+| \$\\theta\$~1~ = 100              | 2,000      | 0          | 0.5          |
++-----------------------------------+------------+------------+--------------+
+| \$\\theta\$~2~ = 150              | 1,750      | 3,000      | 0.3          |
++-----------------------------------+------------+------------+--------------+
+| \$\\theta\$~3~ = 200              | 1,500      | 6,000      | 0.2          |
++-----------------------------------+------------+------------+--------------+
 
 Si se conociera el estado de la naturaleza que se presentará, la mejor decisión para cada evento posible sería:
 
-Para 0, = 100, ... para 6, = 150, a, y para 0; = 200, también a,. Por lo tanto, la ganancia esperada bajo certeza es: . .
+Para \$\\theta\$~1~ = 100, a~1~ ; para \$\\theta\$~2~ = 150, a~2~ y para 0; = 200, también a~2~. Por lo tanto, la *ganancia esperada bajo certeza* es:
 
-GEC = 2,000 (0.5) + 3,000 (0.3) + 6,000 (0.2) = $3,100
+GEC = 2,000 (0.5) + 3,000 (0.3) + 6,000 (0.2) = \$3,100
 
-El VEM que se calculó en el ejemplo 5n(página 26) es de $2,100, entonces el VEIP es igual a
+El VEM que se calculó en el ejemplo 5 (página 26) es de \$2,100, entonces el VEIP es igual a
 
-VEIP =3,100 —2,100 = 1,000
+VEIP =3,100 ---2,100 = 1,000
 
-Como $1,000 es el valor de la información con la que se tomaría “la mejor decisión”, sería irracional pagar más $1,000 por información para determinar la cantidad de playeras que se deben pedir.
+Como \$1,000 es el valor de la información con la que se tomaría "la mejor decisión", sería irracional pagar más \$1,000 por información para determinar la cantidad de playeras que se deben pedir.
 
-3\.2.2 Método 2
+3.2.2 *Método 2*
 
-El VEIP es también el valor mínimo de la pérdida de oportunidad esperada (POE) de cada acción ya que, si el decisor supiera qué estado de la naturaleza se presentaría, y actuara racionalmente, trataría de minimi- zar su pérdida de oportunidad (su arrepentimiento). Por esta razón también se llama costo de la incerti- dumbre a la pérdida de oportunidad esperada (POE).
+El VEIP es también el valor mínimo de la pérdida de oportunidad esperada (POE) de cada acción ya que, si el decisor supiera qué estado de la naturaleza se presentaría, y actuara racionalmente, trataría de minimizar su pérdida de oportunidad (su arrepentimiento). Por esta razón también se llama *costo de la incertidumbre* a la pérdida de oportunidad esperada (POE).
 
-Revise el ejemplo 6 (página 27) y compruebe que la mínima pérdida de oportunidad esperada se obtuvo para a, y es igual a $1,000.
+Revise el ejemplo 6 (página 27) y compruebe que la mínima pérdida de oportunidad esperada se obtuvo para a~2~ y es igual a \$1,000.
 
-El término más general “valor de la información” es una medida del mejoramiento de la decisión como resultado de nueva información, y es la diferencia entre el valor esperado de la acción óptima selecciona- da después de recibir información adicional, menos el valor esperado de la acción óptima dado el estado de información anterior.
+El término más general *"valor de la información"* es una medida del mejoramiento de la decisión como resultado de nueva información, y es la diferencia entre el valor esperado de la acción óptima seleccionada después de recibir información adicional, menos el valor esperado de la acción óptima dado el estado de información anterior.
 
-3\.3 Análisis de sensibilidad
+##3.3 Análisis de sensibilidad
 
-Dado que las probabilidades previas tienen un componente de incertidumbre, es útil realizar un análisis de sensibilidad para determinar cómo afecta a la decisión la asignación de probabilidades a priori. Este aná- lisis se realiza encontrando los conjuntos de distribuciones de probabilidad en donde una acción determi- nada siempre se prefiere a las otras acciones, porque su valor esperado es el más alto.
+Dado que las probabilidades previas tienen un componente de incertidumbre, es útil realizar un análisis de sensibilidad para determinar cómo afecta a la decisión la asignación de probabilidades *a priori*. Este análisis se realiza encontrando los conjuntos de distribuciones de probabilidad en donde una acción determi- nada siempre se prefiere a las otras acciones, porque su valor esperado es el más alto.
 
-1Ej emplo 8 '
+##Ejemplo 8
 
-Para el ejemplo 4 del propietario de la tienda de artículos deportivos (página 26), encuentre el conjunto de probabilidades para los cuales la acción a; se prefiere a la acción a,
+Para el ejemplo 4 del propietario de la tienda de artículos deportivos (página 26), encuentre el conjunto de probabilidades para los cuales la acción a~1~ se prefiere a la acción a~2~
 
-Soluci¿n
+##Solución
 
-El valor esperado de las acciones aj y a, eápresados en términos de probabilidades de los estados de la naturaleza son:
+El valor esperado de las acciones a~1~ y a~2~ eápresados en términos de probabilidades de los estados de la naturaleza son:
 
-|<p>Acción (pedido)</p><p>Estado de la naturaleza (demanda)</p>|<p>a</p><p>100</p>|<p>a</p><p>200</p>|Probabilidad|
-| :- | :- | :- | :- |
-|01 = 100|2,000|0|— PO|
-|0,= 150|1,750|3,000|p(6-)|
-|—|150|600|1-p(6)-7(0)|
++-----------------------------------+------------+------------+-----------------------------------------+
+| Acción (pedido)                   | a~1~       | a~2~       | Probabilidad                            |
+|                                   |            |            |                                         |
+| Estado de la naturaleza (demanda) | 100        | 200        |                                         |
++===================================+============+============+=========================================+
+| \$\\theta\$~1~ = 100              | 2,000      | 0          | p(\$\\theta\$~1~)                       |
++-----------------------------------+------------+------------+-----------------------------------------+
+| \$\\theta\$~2~ = 150              | 1,750      | 3,000      | p(\$\\theta\$~2~)                       |
++-----------------------------------+------------+------------+-----------------------------------------+
+| \$\\theta\$~3~ = 200              | 1,500      | 6,000      | 1-p(\$\\theta\$~1~) - p(\$\\theta\$~2~) |
++-----------------------------------+------------+------------+-----------------------------------------+
 
-VEM.(a1)= 2000p (01)+ 1750p .... + 1500[1—b(0))—7.....
+VEM(a~1~)= 2000 p(\$\\theta\$~1~) + 1750 p(\$\\theta\$~2~) + 1500[1---p(\$\\theta\$~1~)--p(\$\\theta\$~2~)]
 
-VEM (a2)= 0 p (01) + 3000 p (0,) + 6000 [1 —p (01) — (0-)]
+VEM (a2)= 0 p(\$\\theta\$~1~) + 3000 p(\$\\theta\$~2~) + 6000[1---p(\$\\theta\$~1~)--p(\$\\theta\$~2~)]
 
-Cuando VEM'(a¡) > VEM (a2), a se prefiere a ..
+Cuando VEM'(a¡) \> VEM (a2), a se prefiere a~2~:
 
-2000 p (61) + 1750 p (6:) + 1500 [1 —p (1) —p ..... > Op (01) + 3000 p (82) + 6000 [1 —p (01) — ..... Después de simplificar esta expresión se obtiene la désigualdad:
+2000 p(\$\\theta\$~1~) + 1750 p(\$\\theta\$~2~) + 1500 [1---p(\$\\theta\$~1~)--p(\$\\theta\$~2~)] \> Op(\$\\theta\$~1~) + 3000 p(\$\\theta\$~2~) + 6000 [1---p(\$\\theta\$~1~)--p(\$\\theta\$~2~)]
 
-2p (01)+ p(6,) >18/13
+Después de simplificar esta expresión se obtiene la désigualdad:
 
-A partir de ella se determinan todos los valores de probabilidad p (01) y p (0+), que cumpl\_anlos ax\_iomas básicos de probabilidad, para los cuales a¡ debe preferirse sobre a,, y al graficarla se visualiza la región de aceptación de la decisión a;: -
+2p(\$\\theta\$~1~)+ p(\$\\theta\$~2~) \> 18/13
 
-p(0,)
+A partir de ella se determinan todos los valores de probabilidad p(\$\\theta\$~1~) y p(\$\\theta\$~2~), que cumpl_anlos ax_iomas básicos de probabilidad, para los cuales a¡ debe preferirse sobre a~2~, y al graficarla se visualiza la región de aceptación de la decisión a~1~:
 
-0
+##3.4 Árboles de decisión
 
-0\. 0.6 0.4 0.2
+Otra forma de estructurar un problema de toma de decisiones para su análisis, consiste en una gráfica que muestra cronológicamente la secuencia de acciones y resultados a medida que se llevan a cabo. En un problema devarias etapas de decisión, se alternan nodos de decisión (de donde parten las ramas que representan las acciones posibles en ese momento del proceso) y los de probabilidad (de donde parten las ramas que representan a los posibles estados de la naturaleza). Al final se indican las consecuencias o resultados de cada rama.
 
-0 02 04 06 10 p(0
+El proceso de análisis representado en un árbol de decisión se llama de inducción regresiva porque, después de construir el árbol, se va evaluando cada ramaa partir del pago o consecuencia final, de la siguiente manera:
 
-3\.4 Árboles de decisión
+1.  El valor esperado de cada nodo de probabilidad se obtiene sumando el valor esperado de cada rama (el producto de la probabilidad por la consecuencia). El resultado se anota en el nodo.
 
-Otra forma de estructurar un problema de toma de decisiones para su análisis, consiste en una gráfica que muestra cronológicamente la secuencia de acciones y resultados a medida que se llevan a cabo. En un problema devarias etapas de decisión, se alternan nodos de decisión (de donde parten las ramas que re- presentan las acciones posibles en ese momento del proceso) y los de probabilidad (de donde parten las ramas que representan a los posibles estados de la naturaleza). Al final se indican las consecuencias o
+2.  Se comparan los resultados del valor esperado de cada nodo de probabilidad y se elige el que nos acerque más al objetivo del problema. Este valor se coloca en el nodo de decisión que les antecede.
 
-resultados de cada rama. -
+3.  Lasramas del árbol que corresponden a los valores no elegidos se "cierran" debido a que represen- tan acciones cuyos resultados no son racionalmente buenos. Se indica con una doble línea sobre la rama.
 
-El proceso de análisis representado en un árbol de decisión se llama de inducción regresiva porque, des- pués de-construir el árbol, se va evaluando cada ramaa partir del pago o consecuencia final, de la siguien- te manera: :
-
-1. El valor esperado de cada nodo de probabilidad se obtiene sumando el valor esperado de cada ra- ma (el producto de la probabilidad por la consecuencia). El resultado se anota en el nodo.
-1. Se comparan los resultados del valor esperado de cada nodo de probabilidad y se elige el que nos acerque más al objetivo del problema. Este valor se coloca en el nodo de decisión que les antecede.
-1. Lasramas del árbol que corresponden a los valores no elegidos se “cierran” debido a que represen- tan acciones cuyos resultados no son racionalmente buenos. Se indica con una doble línea sobre la rama.
-
-Ejemplo 9 ,
+##Ejemplo 9 ,
 
 Representar en un diagrama de árbol de decisión el ejemplo 4 y su solución.
 
-Solución
+##Solución
 
-El diagrama de árbol aparece en la siguiente figura. Obsérvese que el máximo valor esperado se obtiene \_ para la rama a, por lo tanto la decisión debe ser a,, pedir 200 playeras, y la decisión a¡ se descarta. Los — pagos están en miles de pesos.
+El diagrama de árbol aparece en la siguiente figura. Obsérvese que el máximo valor esperado se obtiene para la rama a~2~ por lo tanto la decisión debe ser a~2~, pedir 200 playeras, y la decisión a~1~ se descarta. Los pagos están en miles de pesos.
 
-En la gráfica del árbol la ruta por a; “se cierra”, y se indica con dos líneas paralelas.
+En la gráfica del árbol la ruta por a; "se cierra", y se indica con dos líneas paralelas.
 
-Acción ' Estado (Demanda) Pagos
+Cuando al tomar una decisión además del valor esperado (VEM) también se considera el *riesgo*, resulta útil representar los resultados posibles de cada acción por medio de una distribución de probabilidad dis- creta, donde dichos resultados son considerados como los valores de una variable aleatoria que tenga probabilidades dadas. Esta gráfica también se llama **perfil de riesgo** de la acción.
 
-(05) $200
+##Ejemplo 10
 
-9 100
+Representar el perfil de riesgo de los resultados de las acciones a~1~ y a~2~ del ejemplo 4 y obtener también las gráficas de las distribuciones de probabilidad acumuladas correspondientes.
 
-175
+##Solución
 
-$210
+##3.5 Criterios para la toma de decisiones con experimentación
 
-300 600
+Se llama también **análisis** ***a posteriori*** porque el VEM (ganancias esperadas) se calcula utilizando las probabilidades *a priori modificadas* a partir de información adicional que se obtiene a través de análisis, experimentación, ensayos, muestreo, etcétera. La intención es reducir la incertidumbre y con ello su costo. Para calcular las *probabilidades revisadas o probabilidades* a posteriori se utiliza el Teorema de Bayes.
 
-Cuando al tomar una decisión además del valor esperado (VEM) también se considera el riesgo, resulta útil representar los resultados posibles de cada acción por medio de una distribución de probabilidad dis- creta, donde dichos resultados son considerados como los valores de una variable aleatoria que tenga probabilidades dadas. Esta gráfica también se llama perfil de riesgo de la acción.
-
-Ejemplo 10
-
-Representar el perfil de riesgo de los resultados de las acciones a y a, del ejemplo 4 y obtener también las gráficas de las distribuciones de probabilidad acumuladas correspondientes.
-
-Solución
-
-Distribución de probabilidad ó . Distribución de prob;xbílidad o Perfil de riesgo de la alternativa aj Perfil de riesgo de la alternativa a;
-
-a,
-
-d
-
-]
-
-100 200 300 400 5\_00 600 0 100 200 300 400 500 £\*600
-
-Distribuciones de probabilidad acumuladas
-
-1,0
-
-0,8
-
-0,6
-
-0,4
-
-0,2
-
-0,0 L f L U 1 i l 1 l l l L
-
-0 100 200 300 400 500. 600 0 100 200 300 400 500 600
-
-3\.5 Criterios para la toma de decisiones con experimentación
-
-Se llama también análisis a posteriori porque el VEM (ganancias esperadas) se calcula utilizando las pro- babilidades a priori modificadas a pattir de información adicional que se obtiene a través de análisis, experimentación, ensayos, muestreo, etcétera. La intención es reducir la incertidumbre y con ello su costo. Para calcular las probabilidades revisadas o probabilidades a posteriori se utiliza el Teorema de
-
-Bayes.
-
-Al disponer de más información como resultado de la experimentación, es necesario revisar el valor de la información adicional, es decir, el valor esperado a posteriori de la información perfecta. Éste se calcula restando a las ganancias esperadas a posteriori con base en una información perfecta, las ganancias esperadas a posteriori, calculadas en condiciones de riesgo (VEM con las probabilidades a posteriori). En el análisis a posteriori el VEIP será menor que en el caso del análisis a priori, cuando se disponía de menos información. '
+Al disponer de más información como resultado de la experimentación, es necesario revisar el valor de la información adicional, es decir, el *valor esperado a posteriori de la información perfecta*. Éste se calcula restando a las ganancias esperadas *a posteriori* **con base en una información perfecta**, las ganancias esperadas *a posteriori*, **calculadas en condiciones de riesgo** (VEM con las probabilidades *a posteriori*). En el análisis *a posteriori* el VEIP será menor que en el caso del análisis *a priori*, cuando se disponía de menos información. '
 
 Por otra parte, también es necesario analizar si vale la pena pagar el costo del muestreo para obtener mayor información, comparándolo con el valor esperado de la información de un plan de muestreo cualquiera.
 
-Ejemplo 11
+##Ejemplo 11
 
-Considérese un conjunto de 1,000 urnas identificadas como del tipo 0; y 6, donde cada urna:
+Considérese un conjunto de 1,000 urnas identificadas como del tipo \$\\theta\$~1~ y \$\\theta\$~2~ donde cada urna:
 
-0¡ contiene 4 bolas rojas y 6 bolas negras, y 0, contiene 9 bolas rojas y 1bola negra.
+\$\\theta\$~1~ contiene 4 bolas rojas y 6 bolas negras, y
+
+\$\\theta\$~2~ contiene 9 bolas rojas y 1 bola negra.
 
 De las 1,000 urnas, 800 son del primer tipo y 200 del segundo.
 
-Una persona selecciona una urna al azar, le quita la etiqueta y la coloca frente a usted pidiéndole que adi- vine qué tipo de urna es. Si usted decide que la urna es del tipo 0; y acierta, gana $4,000, pero si falla pierde $2,000; si decide que la urna es del tipo 6, y acierta, gana $10,000, si se equivoca pierde $500.
+Una persona selecciona una urna al azar, le quita la etiqueta y la coloca frente a usted pidiéndole que adi- vine qué tipo de urna es. Si usted decide que la urna es del tipo \$\\theta\$~1~ y acierta, gana \$4,000, pero si falla pierde \$2,000; si decide que la urna es del tipo \$\\theta\$~2~ y acierta, gana \$10,000, si se equivoca pierde \$500.
 
 Puede pagar para realizar algunos experimentos a fin de conseguir información adicional o tomar la deci- sión con la información proporcionada. Las condiciones son las siguientes:
 
-e e:tomar la decisión con la información disponible. e e; : pagar $800 y extraer una bola de la urna.
+$\circ$ e~0~:tomar la decisión con la información disponible.
 
-e e,:pagar $1,200 y extraer dos bolas de la urna.
+$\circ$ e~1~; : pagar \$800 y extraer una bola de la urna.
 
-Solución
+$\circ$ e~2~,:pagar \$1,200 y extraer dos bolas de la urna.
 
-Acciones: a: decidir que la urna es del tipo 6,
+##Solución
 
-... decidir que la urna es del tipo 0, a; : no participar en el juego
+Acciones: a~1~ decidir que la urna es del tipo \$\\theta\$~1~
 
-Estados de la naturaleza: la ua seleccionada es del tipo 0; -
+a~2~ decidir que la urna es del tipo \$\\theta\$~2~
 
-la urna seleccionada es del tipo 0,
+a~3~ : no participar en el juego
 
-Pagos (re$ultados): Si elige a;: gana $4,000 si el verdaderokestado ¿e la naturaleza es 0;
+Estados de la naturaleza:
 
-pierde $2,000 si el verdadero estado es 0,
+la ua seleccionada es del tipo \$\\theta\$~1~
 
-Sielige a,: gana $10,000 si el verdadero estado es 0,
+la urna seleccionada es del tipo \$\\theta\$~2~
 
-pierde $500 si el verdadero estado es 01
+Pagos (resultados):
 
-Sielige a;: no ganani pierde
+Si elige a~1~: gana \$4,000 si el verdadero estado de la naturaleza es \$\\theta\$~1~
+
+pierde \$2,000 si el verdadero estado es \$\\theta\$~2~
+
+Si elige a~2~: gana \$10,000 si el verdadero estado es \$\\theta\$~2~
+
+pierde \$500 si el verdadero estado es \$\\theta\$~1~
+
+Si elige a~3~: no gana ni pierde
 
 El siguiente diagrama de árbol representa la secuencia de decisiones que pueden tomarse y los estados de la naturaleza posibles en cada caso. Recuerde que el cálculo de los resultados de cada rama se hace en retroceso.
 
+$\circ$ Análisis de la rama e~0~
 
-o
+Si decide jugar y elige tomar la decisión con la información que posee, se calcula directamente el válor esperado para cada acción posible:
 
-as 4,000 2800 b
+VEM (a~1~) = 4000 (0.8) + (-2000) (0.2) = 2,800
 
-\-
+VEM (a~2~) =--- 500 (0.8) + 1000.0 (0.2) = 1,600
 
-2800 \_ =
+VEM (a~3~) =0
 
-u s \_\* -500
+max {2,800; 1,600; 0} =2,800
 
-.
+En la rama e~0~ la mejor decisión que se puede tomar es a~1~: decir que la urna es del tipo \$\\theta\$~1~. En tal caso ¿Cuánto estaría dispuesto a pagar por la información perfecta?
 
-1\.800 =
+VEIP = (Ganancia esperada bajo certeza) ---(VEM máximo)
 
-, f
-
-EN 180 D 4.006
-
-LF
-
-\* - % q 1
-
-as a h .E -500 Da :
-
-1570 1280 e 10000
-
-H
-
-E 40 os
-
-h
-
-140 - 247 ENO NA
-
-4700 470
-
-24/70
-
--800 “- 1000
-
-Árbol de decición del ejemplo 11.
-
-
-e Análisis de la rama e
-
-Si decide jugar y elige tomar la decisión con la información que posee, se calcula directamente el válor esperado para cada acción posible: —
-
-VEM (a1) = 4000 (0.8) + (-2000) (0.2) = 2,800 VEM (a2) =— 500 (0.8) + 1000.0 (0.2) = 1,600 VEM (a3) =0
-
-max (2,800; 1,600; 0) =2,800
-
-En la rama e, la mejor decisión que se puede tomar es a;: decir que la urna es del tipo 0;. En tal caso ¿Cuánto estaría dispuesto a pagar por la información perfecta?
-
-VEIP = (Ganancia esperada bajo certeza) —(VEM máximo)
-
-= 4000(0.8)+ 10000(0.2)—2800= 5200—2800= $2,400-
+= 4000(0.8)+ 10000(0.2)---2800= 5200---2800= \$2,400
 
 Este valor también puede obtenerse a partir de la matriz de pérdida de oportunidad:
 
-|<p>Acciones</p><p>Estado de la naturaleza</p>|a|az|Probabilidades|
-| :- | :- | :- | :- |
-|- 0,|0|4,500|— 0.80|
-|6|12,000|0|020|
-|POE = VEIP|2,400|3,600||
-Por lo tanto, lo más que debería estar dispuesto a pagar por saber el tipo de urna que está frente a usted son $2,400. - -
++-------------------------+--------------+--------------+----------------+
+| Acciones                | a~1~         | a~2~         | Probabilidades |
+|                         |              |              |                |
+| Estado de la naturaleza |              |              |                |
++:========================+:=============+:=============+:===============+
+| \$\\theta\$~1~          | 0            | 4,500        | 0.80           |
++-------------------------+--------------+--------------+----------------+
+| \$\\theta\$~2~          | 12,000       | 0            | 020            |
++-------------------------+--------------+--------------+----------------+
+| POE = VEIP              | 2,400        | 3,600        |                |
++-------------------------+--------------+--------------+----------------+
 
-e Análisis de la rama e
+Por lo tanto, lo más que debería estar dispuesto a pagar por saber el tipo de urna que está frente a usted son \$2,400.
 
-Después de pagar $800, la bola que se extrae puede ser roja o negra y con ese resultado se deberá tomar la decisión. Pero ahora la probabilidad de que la urna sea de un tipo o del otro, se modifica en función del color de la bola extraída: si es roja debe calcularse la probabilidad de que la urna sea del tipo 0, dado que la bola que se extrajo fue roja (rama .. R, a1, 01) o la probabilidad de que sea del tipo 6, dado que la bola fue roja (rama e, R, a, 6>):
+$\circ$ Análisis de la rama e~1~
 
-P(R/0)P(6) \_ d $) 32/100 \_ P(01/... R) = .......... ........... = 7 87+%) G7 =- ...... =0.
+Después de pagar \$800, la bola que se extrae puede ser roja o negra y con ese resultado se deberá tomar la decisión. Pero ahora la probabilidad de que la urna sea de un tipo o del otro, se modifica en función del color de la bola extraída: si es roja debe calcularse la probabilidad de que la urna sea del tipo \$\\theta\$~1~ dado que la bola que se extrajo fue roja (rama e~1~ , R, a~1~, \$\\theta\$~1~ ) o la probabilidad de que sea del tipo \$\\theta\$~2~ dado que la bola fue roja (rama e~1~, R, a~1~, \$\\theta\$~2~ ):
 
-P(R/6,)P(0,)
+La probabilidad asignada *a priori* a \$\\theta\$~1~ ,0.8, se cambia por una probabilidad a posteriori y este nuevo valor será menor si la bola fue roja, ya que las urnas tipo \$\\theta\$~1~ tienen menos bolas rojas que las del tipo \$\\theta\$~2~
 
-P(0,/R) = P(R/O)P(6,) +P(R/0,)P(6,) \_ 50/10018/100 =0.36
-
-La probabilidad asignada a priori a 01,0.8, se cambia por una probabilidad a posteriori y este nuevo valor será menor si la bola fue roja, ya que las urnas tipo 6, tienen menos bolas rojas que las del tipo 6>.
-
-El mismo cálculo se realiza si la bola extraída es negra, y como las urnas tipo 0; tienen más bolas negras que las del tipo 0,, entonces la probabilidad a posteriori en este caso es mayor de 0.8:
-
-D (01/N)"= P(N/0,)P(6,)+P(N/0,)P(6,)PN /8)P(6)) -—50/100 = y
-
-— 48/100
-
-P(0/ ) = P(N/0,)P(6,) - 21100 \_0y
-
-P(N/6,)P(6,) + P(N/0,)P(6,) —50/100
+El mismo cálculo se realiza si la bola extraída es negra, y como las urnas tipo \$\\theta\$~1~ tienen más bolas negras que las del tipo \$\\theta\$~2~ , entonces la probabilidad *a posteriori* en este caso es mayor de 0.8:
 
 Con los valores de las probabilidades revisados a partir de la experimentación, el valor esperado de la información perfecta, si la bola extraída es roja es igual a:
 
-VEIP = 4000 (0.64) + 10000 (0.36) — 3280
+VEIP = 4000 (0.64) + 10000 (0.36) --- 3280
 
-= 6160—3280= $2,880
+= 6160---3280= \$2,880
 
-En la siguiente tabla aparecen los cálculos del VEM de las dos acciones posibles, la matriz de pérdida de oportunidad y el cálculo de la pérdida de oportunidad esperada que, como se sabe, es otra forma de obte- ner el VEIP.
+En la siguiente tabla aparecen los cálculos del VEM de las dos acciones posibles, la matriz de pérdida de oportunidad y el cálculo de la pérdida de oportunidad esperada que, como se sabe, es otra forma de obtener el VEIP.
 
-Como se observa en la tabla, mientras que en la opción e, —sinmuestreo—la mejor decisión es a¡ con un VEM de $2,800 y el VEIP es de $2,400, en la opción e; —quepermite hacer una extracción de la urna—la decisión con el mayor valor esperado es a; con un VEM igual a $3,280 y el VEIP de $2,880.
+Como se observa en la tabla, mientras que en la opción e~0~ ---sinmuestreo---la mejor decisión es a~1~ con un VEM de \$2,800 y el VEIP es de \$2,400, en la opción e~1~ ---quepermite hacer una extracción de la urna---la decisión con el mayor valor esperado es a~2~ con un VEM igual a \$3,280 y el VEIP de \$2,880.
 
-|Estados|a|a,|P(0;/R)|Estados|a|a|
-| :- | :- | :- | :- | :- | :- | :- |
-|0,|4,000|— 500|0\.64|N|0|4,500|
-|07|—2,000|10,000|0\.36|0,|12,000|0|
-|VEM|1,840|3,280||POE = VEIP|4,320|2,880|
+Matriz de decisión                                    Matriz de pérdida de obortunidad
 
-Se observa que con Ja información adicional obtenida por la extracción de una bola roja, el valor del VEM se incrementa dado que aumentó la probabilidad de la urna tipo 6, que tiene un “premio” mayor.
++----------------+----------+---------+----------------------+----------------+--------+--------+
+| Estados        | a~1~     | a~2~    | P(\$\\theta\$~1~ /R) | Estados        | a~1~   | a~2~   |
++:===============+:=========+:========+:=====================+:===============+:=======+:=======+
+| \$\\theta\$~1~ | 4,000    | --- 500 | 0.64                 | \$\\theta\$~1~ | 0      | 4,500  |
++----------------+----------+---------+----------------------+----------------+--------+--------+
+| \$\\theta\$~1~ | ---2,000 | 10,000  | 0.36                 | \$\\theta\$~1~ | 12,000 | 0      |
++----------------+----------+---------+----------------------+----------------+--------+--------+
+| VEM            | 1,840    | 3,280   |                      | POE = VEIP     | 4,320  | 2,880  |
++----------------+----------+---------+----------------------+----------------+--------+--------+
 
-También se incrementó el VEIP y la razón es la siguiente: antes de la extracción, la posibilidad de que la urna frente a usted fuera del tipo 0¡ era mayor (0.8), pero las urnas tipo 0; tienen más bolas rojas, por lo tanto, al sacar una bola roja, aumenta la posibilidad de que la urna sea del tipo 0, y usted estará “menos
+Se observa que con Ja información adicional obtenida por la extracción de una bola roja, el valor del VEM se incrementa dado que aumentó la probabilidad de la urna tipo \$\\theta\$~2~ que tiene un "premio" mayor.
 
-seguro” de qué tipo de uma tiene frente a usted. Por ello, la información perfectá Itendrá más valor dado que está menos seguro de la respuesta que debe dar.
+También se incrementó el VEIP y la razón es la siguiente: antes de la extracción, la posibilidad de que la urna frente a usted fuera del tipo \$\\theta\$~1~ era mayor (0.8), pero las urnas tipo \$\\theta\$~2~ tienen más bolas rojas, por lo tanto, al sacar una bola roja, aumenta la posibilidad de que la urna sea del tipo \$\\theta\$~2~ y usted estará "menos seguro" de qué tipo de uma tiene frente a usted. Por ello, la información perfectá Itendrá más valor dado que está menos seguro de la respuesta que debe dar.
 
-Por otra parte, la diferencia entre los dos valores del VEM, el de a; en e, y el de a; en e, representa el au- mento esperado en el valor del juego debido al experimento de extraer una bola:
+Por otra parte, la diferencia entre los dos valores del VEM, el de a~1~ en e~0~ y el de a~2~ en e~1~ representa el aumento esperado en el valor del juego debido al experimento de extraer una bola:
 
-3280 —2800 . 480
+3280 ---2800 = 480
 
-Se dice entonces que $480 es el valor esperado de la información de la muestra para el experimento e:
+Se dice entonces que \$480 es el *valor esperado de la información de la muestra* para el experimento e~1~
 
-El VEIP puede indicar si se debe obtener o no una información muestral imperfecta. Así, si para e; el costo de la experimentación hubiera sido no de $800 como está planteado, sino mayor de $2,400 (que es el VEIP para lá decisión que se tomaría sin experimentación), no tendría sentido considerar la rama e.
+El VEIP puede indicar si se debe obtener o no una información muestral imperfecta. Así, si para e; el costo de la experimentación hubiera sido no de \$800 como está planteado, sino mayor de \$2,400 (que es el VEIP para lá decisión que se tomaría sin experimentación), no tendría sentido considerar la rama e~1~
 
 Si la bola que se extrae es negra, el valor monetario esperado y la pérdida de oportunidad esperada co- rrespondientes a cada acción, son los siguientes:
 
 Matriz de decisión Matriz de pérdida de obortunidad
 
-|Estados|a|a|P(0;/N)|Estados|a|a,|
-| :- | :- | :- | :- | :- | :- | :- |
-|01|4,000|— 500|0\.96|0;|0|4,500|
-|0,|—2,000|-10,000|0\.04|07|12,000|0|
-|VEM|3,760|—80||POE = VEIP|480|4,320|
++----------------+----------+---------+---------------------+----------------+---------+---------+
+| Estados        | a~1~     | a~2~    | P(\$\\theta\$~1~/N) | Estados        | a~1~    | a~2~    |
++:===============+:=========+:========+:====================+:===============+:========+:========+
+| \$\\theta\$~1~ | 4,000    | --- 500 | 0.96                | \$\\theta\$~1~ | 0       | 4,500   |
++----------------+----------+---------+---------------------+----------------+---------+---------+
+| \$\\theta\$~1~ | ---2,000 | -10,000 | 0.04                | \$\\theta\$~1~ | 12,000  | 0       |
++----------------+----------+---------+---------------------+----------------+---------+---------+
+| VEM            | 3,760    | ---80   |                     | POE = VEIP     | 480     | 4,320   |
++----------------+----------+---------+---------------------+----------------+---------+---------+
 
-En este caso la mejor decisión es a con un VEM de $3,760 y el VEIP es igual a $480 Y, como ya se sabe, VEM + POE = constante:
+En este caso la mejor decisión es a con un VEM de \$3,760 y el VEIP es igual a \$480
 
-aj: 3,760+480=4,240 “a: —80+4,320=4,240
+Y, como ya se sabe, VEM + POE = constante:
 
-Continuando con el análisis de inducción regresiva, las probabilidades correspondientes a las ramas (e1, R) y (€1,N) se calculan de:
+a~1~: 3,760+480 =4,240
 
-P(R) = P(R N 0,)+ P(R N 6:)= P(R) P(6) + P(R) P(O,) P(R) = (0.4)(0.8)+ (0.9)(0.2)= 0.5
+a~2~: --80+4,320 =4,240
 
-P(N) = P(N N 61)+ PIN N 62)= P(N) P(61)+ P(N) P(6+) P(N) = (0.6)(0.8)+ (0.1)(0.2)= 0.5
+Continuando con el análisis de inducción regresiva, las probabilidades correspondientes a las ramas (e~1~, R) y (e~1~,N) se calculan de:
 
 El VEM en el nodo de azar antes de la extracción es:
 
-3280 (0.5) + 3760 (0.5) = $ 3,520
+3280 (0.5) + 3760 (0.5) = \$ 3,520
 
-Después de pagar el costo de la experimentación, el valor esperado de la rama e; es
+Después de pagar el costo de la experimentación, el valor esperado de la rama e~1~ es
 
-VEM (e1) = 3520 —800 =$ 2,720
+VEM (e~1~) = 3520 ---800 =\$ 2,720
 
-Ladiferencia del VEM entre las ramas e, (sin experimentación) y e¡ antes de pagar el costo de la experi- mentación, representa el aumento esperado en el valor del juego debido a la extracción de una bola:
+Ladiferencia del VEM entre las ramas e~0~ (sin experimentación) y e~1~ antes de pagar el costo de la experimentación, representa el aumento esperado en el valor del juego debido a la extracción de una bola:
 
-3,520—2,800= $720
+3,520---2,800= \$720
 
-Se dice entonces que el valor esperado de la información de la muestra para el experimento e; es de $720. :
+Se dice entonces que el *valor esperado de la información de la muestra* para el experimento e~1~ es de \$720. :
 
-e Análisis de la rama e,
+$\circ$ Análisis de la rama e~2~
 
-En este caso la experimentación consiste en extraer dos bolas de la urna pagando $1,200 y, después de observarlas, decidir qué tipo de umnaes.
+En este caso la experimentación consiste en extraer dos bolas de la urna pagando \$1,200 y, después de observarlas, decidir qué tipo de urna es.
 
 Las probabilidades de las diferentes rutas del árbol para esta opción de experimentación se calculan como sigue: .
 
-1. Para la ruta (e,, RR, a1,01), las probabilidades a posteriori se calculan de:
+1.  Para la ruta (e~2~, RR, a~1~,\$\\theta\$~1~), las probabilidades a posteriori se calculan de:
 
-P(0/RR)= P(RR/O,)P(6) \_\_ - (4/10)(3/9)(8/10) .
+2.  Para la ruta (e~2~, RR, a~1~,\$\\theta\$~2~):
 
-Y PRRIOJP(O) - ............. 0/10)8/9)2/10) '
+3.  Calcule las probabilidades a posteriori de las ramas (e~2~, RR, a~1~,\$\\theta\$~1~) y (e~2~, RR, a~1~,\$\\theta\$~2~), y compruebe que son iguales a las obtenidas para la acción a~1~
 
-i=l
-
-2. Para la ruta (e,, RR, a1, 0>):
-
-P(0y/RR)= PRR/O:IP(O) - - (9/10)(8/9)(2/10) 06
-
-2 ÍP(RR/&)P(6.) (4/10)(3/9)(8/10)+(9/10)(8/9)(2/10) —
-
-i=l
-
-\-
-
-3. Calcule las probabilidades a posteriori de las ramas (e,, RR, a, 01)y (€2,RR, a2, 0,), y compruebe que son iguales a las obtenidas para la acción .
-
-4. Para la ruta (e,, RN, a, 01)y también para (e,, NR, a, 01) la probabilidad revisada es:
-
-P(0,/RN oNR) = 2P(RN0NR/6¡)P(BI)
-
-» P(RNONR/0,)P(6,) i=l
-
-(4/10x6/9+6/10x4/9)(8/10) 32 —(4/10x6/9+6/10x4/9)(8/10) +(9/10x1/9+1/10x9/9)(2/10)) —35
+4.  Para la ruta (e~2~, RN, a~1~,\$\\theta\$~1~)y también para (e~2~, NR, a~1~,\$\\theta\$~1~) la probabilidad revisada es:
 
 Y, en consecuencia,
 
-P(0/ RN o NR) = ....... RN o NR) = %
+5.  Estos mismos valores de probabilidad corresponden a las ramas (e~2~, RN o NR, a~1~,\$\\theta\$~1~) y (e~2~, RN o NR, a~1~,\$\\theta\$~2~).
 
-5. Estos mismos valores de probabilidad corresponden a las ramas (e,, RN o NR, a, 01)y (e2, RN o NR, a2,0).
-6. Rama (e,, NN, a, 01):
-
-..... NN)= 2P(NJV/91)P(91) \_ (6/10(5/9)(8/10)
-
-Y ............. -............................ \_
-
-i=l
+6.  Rama (e~2~, NN, a~1~,\$\\theta\$~1~):
 
 Por lo tanto,
 
-P(0,/ NN) = 0
+P(\$\\theta\$~2~/ NN) = 0
 
-Con estos valores se hace el análisis regresivo, calculando el valor esperado de cada nodo de azar y selec- cionando la ruta que proporcione el máximo valor futuro en cada nodo de decisión. Las rutas que no co- rresponden a los máximos se “cierran”. Como puede observarsc en el árbol, el VEM de cada rama después de pagar la experimentación, si la hay, es:
+Con estos valores se hace el análisis regresivo, calculando el valor esperado de cada nodo de azar y seleccionando la ruta que proporcione el máximo valor futuro en cada nodo de decisión. Las rutas que no co- rresponden a los máximos se "cierran". Como puede observarsc en el árbol, el VEM de cada rama después de pagar la experimentación, si la hay, es:
 
-VEM (es) = $2,800
+VEM (es) = \$2,800
 
-VEM (e1) = 3,520 —800 = $2,720 VEM (e2) = 4,240 — 1,200 = $3,040 VEM (no jugar) = $ 0
+VEM (e1) = 3,520 ---800 = \$2,720
 
-de acuerdo con el criterio del VEM máximo, la decisión debe ser la opción ... pagar $1,200 para extraer dos bolas de la urna. Si ambas bolas son rojas, decidir a,: que la uma es del tipo 0,. Si una es roja y la otra negra, decidir a;: que la ua es del tipo 6. Si las dos bolas son negras, decidir a¡: urna tipo 0;
+VEM (e2) = 4,240 --- 1,200 = \$3,040
 
-3\.6 Análisis en la forma extensiva
+VEM (no jugar) = \$ 0
+
+de acuerdo con el criterio del VEM máximo, la decisión debe ser la opción e~2~ pagar \$1,200 para extraer dos bolas de la urna. Si ambas bolas son rojas, decidir a~2~: que la uma es del tipo \$\\theta\$~2~. Si una es roja y la otra negra, decidir a~1~: que la urna es del tipo \$\\theta\$~1~ Si las dos bolas son negras, decidir a~1~: urna tipo \$\\theta\$~1~
+
+3.6 Análisis en la forma extensiva
 
 El proceso del análisis empleado, llamado de inducción regresiva o en retroceso, consta de cuatro pasos:
 
@@ -541,8 +483,6 @@ Paso 1. Estructurar el árbol de decisión en forma cronológica (extensa).
 
 Paso 2. Asignar pagos o utilidades a los extremos de cada rama del árbol.
 
-Paso 3. Asignar probabilidades a todas las ramas que parten de nodos de posibles estados de la natu-
-
-raleza. "
+Paso 3. Asignar probabilidades a todas las ramas que parten de nodos de posibles estados de la naturaleza. "
 
 Paso 4. Calcular los valores esperados por el proceso de inducción en retroceso. Este procedimiento se denomina forma extensiva de análisis.
