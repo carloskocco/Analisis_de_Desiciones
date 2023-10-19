@@ -1,0 +1,137 @@
+---
+title: "EvaluacionGlobal_AD"
+author: "Carlos Manuel Gómez Miranda"
+date: "2023-10-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+Una gran compañía de energéticos ofrece al dueño de un terreno \$60,000 por los derechos de exploración de gas natural en un sitio determinado y la opción para un desarrollo futuro. La opción, si se ejerce, vale \$60,000 adicionales para el propietario, pero esto ocurrirá sólo si se descubre gas natural durante la etapa de exploración.
+
+El propietario, considerando que el interés de la compañía es una buena indicación de que existe gas, está tentado a desarrollar él mismo el campo. Para hacer esto, deberá contratar equipos locales con experiencia en exploración y desarrollo. El costo inicial es de \$100,000, los que se perderán si no se encuentra gas. Sin embargo, si descubre gas, el propietario estima un beneficio neto de 2 millones de dólares.
+
+Las decisiones para el propietario son a~1~: aceptar la oferta de la compañía de energéticos y a~2~: explorar y desarrollar por su cuenta. Los estados de la naturaleza son $\theta$ ~1~: no hay gas en el sitio) y $\theta$ ~2~: hay gas en el sitio. Las ganancias (en miles de dólares) para el propietario en cada combinación de eventos se dan en la siguiente matriz de decisión:
+
+$$
+\begin{equation}
+\begin{matrix}
+{Acción\\Estado\:de\:la\:\\naturaleza} & {a_1 } & {a_2} \\
+{\theta_1} & \$60 & \$-100     \\
+{\theta_2} & \$120 & \$2,000
+\end{matrix}
+\end{equation} 
+$$
+
+Quedan por especificarse o estimarse las probabilidades correspondientes a los dos estados de la naturaleza, P($\theta$ ~1~ ) y P($\theta$ ~2~ ).
+
+Resuelva lo siguiente:
+
+a.  Determínense las decisiones recomendables bajo cada criterio de análisis previo o criterios de elección no probabilística: (1) maximin de Wald, (2) maximax, (3) criterio de Hurwicz con $\alpha$ **=1/3** y (4) criterio de Savage.
+
+**1).** El criterio **maximin de Wald** es pesimista por que busca lo mejor de lo peor . Maximizando la minima ganancia por lo que elegimos la mayor de las ganancias minimas de ***a~1~ = \$60*** y ***a~2~ = \$-100***
+
+**max {\$60; \$-100 }= \$60 --\>** **a~1~**
+
+Por lo tanto nuestra elección con el criterio maximin sería **a~1~** .
+
+**2).** El criterio **maximax** es optimista ya que busca lo mejor de lo mejor. Mximizando las maximas ganacias por lo que elegimos la mayor de las ganancias maximas de ***a~1~ = \$120*** y ***a~2~ = \$2,000***
+
+**max {\$120; \$2,000 }= \$2,000 --\>** **a~2~**
+
+Por lo tanto nuestra elección con el criterio maximax sería **a~2~** .
+
+**3).** El criterio de Hurwicz considera que el optimismo puede ser expresado por un coeficiente de optimismo, el cual para este caso tiene el valor de $\alpha$ **=1/3** , para este criterio elejimos la acción con el mayor **H~j~** lo cual esta dado por:
+
+**H~j~ = (**$\alpha$ **)(consecuencia maxima) + (1-** $\alpha$ **)(consecuencia mínima)**
+
+Para **a~1~** tenemos:
+
+**H~1~ = (1/3)(\$120) + (2/3** **)(\$60)=\$40 +\$40 = \$80**
+
+Para **a~2~** tenemos:
+
+**H~2~ = (1/3)(\$2,000) + (2/3** **)(\$-100)=\$666.6 - \$66.6 = \$600**
+
+El maximo **H~j~** es:
+
+**max {\$80; \$600 }= \$600**
+
+Corresponde a **H~2~** por lo que nuesta elección para este criterio seria **a~2~** .
+
+**4).** El criterio de Savaje propone miminizar el pesar debido a una decision que no fuera la mejor una vez que ha ocurrido un estado de la naturaleza específico . Primero debemos calcular la ***matriz de arrepentimiento o perdida de oportunidad*** y utilizar el criterio **minimax** para seleccionar la acción que permita ***minimizar el arrepentimiento máximo***.
+
+Calculamos la matriz de arrepentimiento sustituyendo con 0 el valor mas grande de cada renglon (este es el valor de arrepentimiento para cada entrada )de la matriz de decisión (los datos siguientes están en miles de dólares):
+
+$$
+\begin{equation}
+\begin{matrix}
+{Acción\\Estado\:de\:la\:\\naturaleza} & {a_1 } & {a_2} \\
+{\theta_1} & \$60 & \$-100     \\
+{\theta_2} & \$0 & \$0
+\end{matrix}
+\end{equation} 
+$$
+
+Con los renglones restantes calculamos la perdida de oportunidad de la siguiente manera:
+
+Perdida de oportunidad = $\lbrace$ Pago que se habria recibido si se conociera el estado de la naturaleza que iba ocurrir $\rbrace$ - {Pago actual}
+
+Una vez identificados los valores de arrepentimiento en la matriz de arrepentimiento determinamos el valor maximo de cada acción. De acuerdo con lo anterior en nuestro caso la perdida de oportunidad que tendriamos si sabemos que no hay gas y elegimos **a~2~** seria:
+
+**\$220 = \$ 120 -(-\$100)**
+
+La perdida de oportunidad que tendriamos si sabemos que hay gas y elegimos **a~1~** sería:
+
+**\$1880= \$ 2,000 -\$120**
+
+Por último elegimos la acción que tiene el valor mínimo de los máximos que determinamos en los puntos anteriores, con el fin de minimizar el arrepentimiento:
+
+**min{ \\\$1880 ; \\\$220} = \$ 220 --\>** **a~2~**
+
+Por lo tanto nuestra elección con el criterio de **Savaje** sería **a~2~** .
+
+b.  Determínese la decisión recomendable bajo un criterio ***a priori***, si el propietario estima que la probabilidad de encontrar gas de 0.6. y constrúyase el árbol de decisiones respectivo. (2 puntos)
+
+Los datos siguientes están en miles de dólares:
+
+![](images/Captura%20de%20pantalla%20(38).png)
+
+Comenzamos nuestro árbol de decisiones con nuestra mejor opción de las posibles rutas, enseguida tenemos las posibles acciones a tomar pero en este caso la ruta para **a~1~** esta cerrado por las dos lineas paralelas ya que no es la mejor accion a seguir. Enseguida en cada nodo encontramos un valor que es igual a la suma de los prodcutos que se optiene de los pagos por sus respectivas probabilidades asociadas a cada estado de la naturaleza. Si leemos el arbol de derecha a izquierda y ibservamos el mejor valor deseado en cada nodo podemos determinar la mejor accion a seguir.
+
+Podemos observar del árbol de decisiones que bajo un criterio ***a priori*** nuestra mejor opción es **a~2~**
+
+C. El propietario ha decidido realizar pruebas con sonido en el sitio en donde se sospecha que haya gas natural, con un costo de \$30,000. Las pruebas de sonido indican que no hay gas presente, pero la prueba no es perfecta. La compañía que realizó las pruebas acepta que 30% de las veces la prueba indicará que no hay gas cuando en realidad éste existe. Cuando no existe gas, la prueba es acertada 90% de las veces. (2 puntos)
+
+Empleando estos datos, actualice la estimación inicial del propietario de que la probabilidad de encontrar gas es de 0.6 y determinese después la decisión recomendada bajo el criterio a posteriori. Asígnese $\theta$ ~1~ al evento: las pruebas de sonido indican que no hay gas. (2 puntos)
+
+Realizamos el siguiente árbol de de decisión para nuestro analisis ***a posteriori*** al realizar las pruebas dónde corregimos la estimación inicial de encontrar gas de **0.6** a **0.3** si hay a pesar de que la prueba indique que no hay y de **0.6** a **0.1** si no hay y las pruebas indican que no hay. Dadas las nuevas estimaciones podemos observar el curso de acción a seguir dado el resultado de dichas pruebas.Los datos siguientes están en miles de dólares:
+
+![](images/Captura de pantalla (45).png)
+
+Comenzamos nuestro árbol de decisiones con nuestro mejor resultado dadoentre si las pruebas indicaron que hay o no gas pero a estos resultado les restamos \$30 por el costo de las pruebas , enseguida tenemos el mejor resultado para cada situación de las posibles acciones a tomar pero en este caso la ruta para **a~1~** esta cerrada por las dos lineas paralelas ya que no es la mejor accion a seguir. Enseguida en cada nodo encontramos un valor que es igual a la suma de los prodcutos que se optiene de los pagos por sus respectivas probabilidades asociadas a cada estado de la naturaleza. Si leemos el arbol de derecha a izquierda y ibservamos el mejor valor deseado en cada nodo podemos determinar la mejor accion a seguir.
+
+Podemos observar del árbol de decisiones que bajo un criterio ***a posteriori*** conociendo los resultados de las pruebas nuestra mejor opción es **a~2~**
+
+d.  Resuelva el problema considerando que las pruebas de sonido indicaron que había gas presente. (2 puntos)
+
+Los datos siguientes están en miles de dólares:
+
+![](images/Captura%20de%20pantalla%20(44).png){width="1198"}
+
+Comenzamos nuestro árbol de decisiones con nuestro mejor resultado dado que la prueba indico que hay gas pero a ese resultado le restamos \$30 por el costo de la prueba , enseguida tenemos el mejor resultado para cada situación de las posibles acciones a tomar pero en este caso la ruta para **a~1~** esta cerrada por las dos lineas paralelas ya que no es la mejor accion a seguir. Enseguida en cada nodo encontramos un valor que es igual a la suma de los prodcutos que se optiene de los pagos por sus respectivas probabilidades asociadas a cada estado de la naturaleza. Si leemos el arbol de derecha a izquierda y ibservamos el mejor valor deseado en cada nodo podemos determinar la mejor accion a seguir.
+
+Para este caso donde la prueba indica que hay gas presente el mejor curso de acción a seguir es **a~2~** .
+
+e.  Cuál es la decisión recomendada si las pruebas de sonido no se han realizado, sino solamente se están considerando y elabórese el árbol de decisiones respectivo. (2 puntos)
+
+Los datos siguientes están en miles de dólares:
+
+![](images/Captura%20de%20pantalla%20(43).png)
+
+Comenzamos nuestro árbol de decisiones con nuestro mejor resultado en entre los dos posibles situaciones que podemos tener considerando realizar las pruebas y sin considerarlas, enseguida tenemos el mejor resultado para cada situación de las posibles acciones a tomar en el caso de los caminos que se toman realizando las pruebas se le resta \$30 a los resultados ya que es el costo de realizar las pruebas ,pero en cada caso la ruta para **a~1~** esta cerrada por las dos lineas paralelas ya que no es la mejor accion a seguir. Enseguida en cada nodo encontramos un valor que es igual a la suma de los prodcutos que se optiene de los pagos por sus respectivas probabilidades asociadas a cada estado de la naturaleza. Si leemos el arbol de derecha a izquierda y ibservamos el mejor valor deseado en cada nodo podemos determinar la mejor accion a seguir.
+
+De lo que podemos concluir de arbol de decisiones anterior es que haya o no gas se realicen o las pruebas el mejor curso de accion a seguir es **a~2~**
